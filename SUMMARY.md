@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Audience]()
-* [React Native Internals]()
+* [React Native Internals](./3-react-native-internals/react-native-internals.md)
 * [Setting up the project]()
   * [Installing react-native]()
   * [Using React-Native Debugger for debugging]()
