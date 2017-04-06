@@ -1,81 +1,63 @@
 # React Native Internals
 
-<Introduction>
+`<Introduction>`
 
-React Native lets us build native applications using Javascript. We get complete access to native views and native APIs
-in both android and ios. Unlike cordova , it doesnt run your application inside a webview. React native apps are using native
-views, fields ,etc to render onto the screen which allows it to provide native look and feel and also the performance of the native views.
+React Native is a framework which allows developers to build native apps using Javascript. Wait! Cordova already does that
+and has been around for quite a while. Why will anyone want to use RN ?
 
-At first, it all looks black magic ! Lets see how react native really works inside.
+The primary difference between RN and Cordova based apps is that Cordova based apps run inside a webview while RN apps render using native views. RN apps have direct access to all the Native APIs and views offered by the underlying mobile OS. Thus, RN apps have the same feel and performance of the native application.
 
-### Architecture
+At first, it is easy to assume that react native might be compiling JS code into the respective native code directly. But this would be really hard to achieve since Java and Objective C are strongly typed languages while Javascript is not ! Instead RN does something much much clever. React Native essentially can be considered as a set of React components, where each component represents the corresponding native views and components. For example, a native TextInput will have a corresponding RN component which can be directly imported onto the JS code and used like any other react component. Hence, the developer will be writing the code just like for any other React web app but the output will be a native app.
+
+Ok ! This all looks black magic 🙄.
+
+To understand this, lets take a look at the architecture and how react native works internally.
+
+### Architecture 🤖
 
 Both IOS and Android have a similar architecture with subtle differences.
 
 If we consider the big picture, there are three parts to the RN platform:
 
-1. **Native Code**
-Most of the native code in case of IOS is in Object C or Swift. While in case of android its Java.
-But for most cases we will not need to write any native code while writing our react native app.
+1. **Native Code/Modules** :
+  Most of the native code in case of IOS is written in Object C or Swift. While in case of android it is Java.
+  But for most cases we will not need to write any native code while writing our react native app.
 
-2. **Javascript VM**
-The JS Virtual Machine that runs all our JavaScript code.
-On iOS/Android simulators and devices React Native uses JavaScriptCore, which is the JavaScript engine that powers Safari.
-JavaScriptCore is the built-in open source JavaScript engine for WebKit.
-Incase of IOS, React Native uses the IOS platform provided JavaScriptCore.
-It was first introduced in IOS 7 along with OSX Mavericks.
-Link : https://developer.apple.com/reference/javascriptcore.
+2. **Javascript VM** :
+  The JS Virtual Machine that runs all our JavaScript code.
+  On iOS/Android simulators and devices React Native uses JavaScriptCore, which is the JavaScript engine that powers Safari.
+  JavaScriptCore is an open source JavaScript engine originally built for WebKit.
+  Incase of IOS, React Native uses the IOS platform - provided JavaScriptCore.
+  It was first introduced in IOS 7 along with OSX Mavericks.<br/>
+  https://developer.apple.com/reference/javascriptcore.
 
-In case of Android, React Native bundles the JavaScriptCore along with the application.
+  In case of Android, React Native bundles the JavaScriptCore along with the application. This increases the app size. Hence the hellow world application of RN would take around 3 to 4 megabytes.
 
-_Note_
-In case of Chrome debugging, the JavaScript code runs within Chrome itself (instead of the JavaScriptCore on the device) and communicates with native code via WebSocket. So, here its using the V8 engine.
+  In case of Chrome debugging mode, the JavaScript code runs within Chrome itself (instead of the JavaScriptCore on the device) and communicates with native code via WebSocket. So, here it will use the V8 engine. This allows us to see a lot of information on the chrome debugging tools like network requests, console logs ,etc. 😎
 
-3. RN Bridge
-React Native bridge is a C++/Java bridge which is responsible for communication between the native and the Javascript environments.
-The RN Bridge can be considered as a link between both worlds.
+3. **React Native Bridge** :
+  React Native bridge is a C++/Java bridge which is responsible for communication between the native and Javascript thread.
+  A custom protocol is used for message passing.
 
-Lets see the architecture wrt to Android we will go through subtle difference in IOS.
+<br />
+<div style="text-align:center">
+<img src="../assets/images/rn-architecture.png" style="width: 80%;display: inline;"/>
+</div>
+<br/>
 
+In most cases, a developer would write the entire react native application in Javascript. To run the application one of the following commands are issued via the cli - `react-native run-ios` or `react-native run-android`. At this point React native cli would spawn a node packager/bundler that would bundle the js code into a single `main.bundle.js` file. The packager is basically a customized version of webpack. Now, whenever the react native app is launched, at first the native entry point view is loaded. The Native thread spawns the JS VM thread onto which the bundled JS code is run. The JS code has all the business logic of the application. The Native thread now sends messages via the RN Bridge to start the JS application. Now the spawned Javascript thread starts issuing instructions to the native thread via the RN Bridge. The instructions include what views to load, what information to be retrieved from the hardware, etc. For example, if the js thread wants a view and text to be created it will batch the request onto a single message and send it across to native to render them.
 
-In both the platforms,the code we write in Javascript is bundled into a main.bundle js file using a packager.
-The bundled code runs inside a Javascript VM.
+`[ [2,3,[2,'Text',{...}]] [2,3,[3,'View',{...}]] ]`
 
+The native thread will perform these operations and send the result back to the JS assuring that the operations have been performed.
 
-1. Source -- https://www.youtube.com/watch?v=8N4f4h6SThc
-
-Android
-Java/c++     ----------------->        JS VM (ios --- in system)
-(Native)      Bridge(Java/C++)         (android --- package with the app) --so app size is bigger (3.5mb for hello world)
-             <-----------------
-
-ios
-c
-JavascriptCore
-
-
-
-Bridge (c++) --- follows custom protocol for message passing
-
-Messages from the Native are send first to start the application via an entry point.
-then
-Messages from JS are sent in batches to the Native environment to perform some operations.
-[[2,3,[2,'Text',{...}]]
-[2,3,[3,'View',{...}]]]
-
-For example if the js environment wants two textviews to be created it will batch the request onto a single message and
-send it across to native to render them.
-
-
+*__Note__: To see the bridge messages on the console, just put the following snippet onto the `index.<platform>.js` file*
 ```
 import MessageQueue from 'react-native/Libraries/BatchedBridge/MessageQueue';
 MessageQueue.spy(true);
 ```
-To see the bridge Messages
 
-
-
-Threading
+### Threading Model 🚧
 
 Three threading queues
 UI Events(Native Queue)  ------ React Native Modules(Queue) -------  JS Event Queue
@@ -110,8 +92,6 @@ JavaScript thread performance suffers greatly when running in dev mode. This is 
 
 
 
-
-
 DaveKerr blog article to be incorporated for managing build files
 http://www.dwmkerr.com/tips-and-tricks-for-beautifully-simple-mobile-app-ci/
 
@@ -121,3 +101,6 @@ Performance -
 1.Keys in list
 2.Should component Update
 3.
+
+
+Source -- https://www.youtube.com/watch?v=8N4f4h6SThc - RN android architecture video
