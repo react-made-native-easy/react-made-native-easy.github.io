@@ -1,4 +1,4 @@
-#### Utilizing the Power of ESLINT for consistent code
+### Utilizing the Power of ESLINT for consistent code
 
 You have to trust us on this, ESLINT can increase your speed of development exponentially by making sure that the coding style is consistent throughout the project.
 

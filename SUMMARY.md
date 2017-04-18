@@ -11,8 +11,8 @@
   * [Github Releases]()
 * [Project Structure and start building ```<some>``` app]() //app starts
 * [Coventions and Code Style]()
-  * [Utilizing the Power of ESLINT for consistent code]()
-  * [Github Pre-push/Pre-commit Hooks]()
+  * [Utilizing the Power of ESLINT for consistent code](./6-conventions-and-code-style/eslint.md)
+  * [Github Pre-push/Pre-commit Hooks](./6-conventions-and-code-style/git-pre-hooks.md)
   * [Environment Variables]()
   * [Speed up development with some ES7 features 🤘]()
   * [Axios and API mocks]()
