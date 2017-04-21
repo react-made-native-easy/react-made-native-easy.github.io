@@ -1,0 +1,86 @@
+## Speed up development with some and ES7 features.
+
+We all have got our hands dirty with ES6 already and we all loved it. React Native supports some of the ES7 features out of the box so no setting up is required to use them. Let me introduce you to some of the ES7 features which will surely help you speed up your development:
+
+
+### Class properties instead of constructor
+
+We all have used constructor() in our class components and had to use `.bind` while calling class member functions and faced problems accessing `this.setState` or `this.props`. Unfortunately that's how ES6 classes work. I am not gonna explain you why do we need to do all this(there are better resources available online to understand that 😉). But I can tell you a really interesting ES7 feature which you will love. Let me introduce you to <b>ES7 Class instances</b>.
+
+By using this feature, you can define class members (`state` for eg.) without the need of `constructor`.
+So instead of,
+```
+class SomeComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    }
+  }
+  ...
+}
+```
+We can write,
+```
+class SomeComponent extends Component {
+  state = {
+    count: 0
+  }
+  ...
+}
+```
+
+### Arrow functions instead of class methods
+
+Using the above feature, we can also define arrow functions as class instances and since arrow functions does not have their own scope, the `this` inside arrow function will always point to the class. Therefore you do not need to do binding of `this` inside constructor. And in most of the cases, you would not be required to use constructor at all. In our project, we never used constructor in any of the components 🤘
+
+Before:
+```
+class SomeComponent extends Component {
+  _incrementCounter() {
+    this.setState({count: this.state.count+1})
+  }
+  constructor() {
+    this._incrementCounter = this._incrementCounter.bind(this);
+  }
+  ...
+}
+```
+After:
+```
+class SomeComponent extends Component {
+  _incrementCounter = () => {
+    this.setState({count: this.state.count+1})
+  }
+  ...
+}
+```
+
+
+### Object rest spread
+ES6 already supports array spread operator. You can use the same syntax for objects as well. So instead of writing `Object.assign({},a,{b:2})`, we can directly use `{...a, b:2}`.
+
+You might say that there is nothing new in this. But if used well, it can make your react code much more beautiful and clean. Let me show you the code before and after using spread operator.
+
+
+Before
+```
+class SomeComponent extends Component {
+  static defaultProps = {
+    someProp: {}
+  }
+  render() {
+    const someProp = this.props.someProp;
+  }
+}
+```
+
+After
+
+```
+class SomeComponent extends Component {
+  render() {
+    const {someProp={}} = this.props;
+  }
+}
+```
