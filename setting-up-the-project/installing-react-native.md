@@ -1,4 +1,4 @@
-# Installing React Native
+# Getting started
 
 
 
