@@ -18,5 +18,5 @@ brew install yarn
 
 If you are planning to develop for **IOS** you need to install **XCode **and** Xcode Command Line Tools**.  XCode can be installed via the [Mac App store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12). Recommended version is Xcode 8 or higher.  Xcode Command Line Tools can be installed from within XCode. Open XCode, then choose "Preferences..." from the Xcode menu. Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
 
-If you plan to develop for **Android **you need the android-sdk.
+If you plan to develop for **Android **you need the android sdk. Best way to install android development tools and sdk is by installing **Android Studio**. 
 
