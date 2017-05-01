@@ -38,7 +38,7 @@ If we consider the big picture, there are three parts to the RN platform:
   React Native bridge is a C++/Java bridge which is responsible for communication between the native and Javascript thread.
   A custom protocol is used for message passing.
 
-![](/assets/images/rn-architecture.png)
+![react native architecture diagram](/assets/images/rn-architecture.png)
 
 In most cases, a developer would write the entire react native application in Javascript. To run the application one of the following commands are issued via the cli - `react-native run-ios` or `react-native run-android`. At this point React native cli would spawn a node packager/bundler that would bundle the js code into a single `main.bundle.js` file. The packager can be considered something similar to webpack. Now, whenever the react native app is launched, at first the native entry point view is loaded. The Native thread spawns the JS VM thread onto which the bundled JS code is run. The JS code has all the business logic of the application. The Native thread now sends messages via the RN Bridge to start the JS application. Now the spawned Javascript thread starts issuing instructions to the native thread via the RN Bridge. The instructions include what views to load, what information to be retrieved from the hardware, etc. For example, if the js thread wants a view and text to be created it will batch the request onto a single message and send it across to native to render them.
 
