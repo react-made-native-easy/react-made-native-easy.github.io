@@ -5,18 +5,22 @@
 
 #### Why not native ?
 
-Need to maintain multiple code bases for multiple platforms
-Inconsistent APIs in multiple platforms
-With react native learn once write on both platforms.
-Same dev team for both IOS and android
+Need to maintain multiple code bases for multiple platforms  
+Inconsistent APIs in multiple platforms  
+With react native learn once write on both platforms.  
+Same dev team for both IOS and android  
 Lot of code is shared - saves time and cost
 
-
-
 #### DaveKerr blog article
-for managing build files - http://www.dwmkerr.com/tips-and-tricks-for-beautifully-simple-mobile-app-ci/
 
+for managing build files - [http://www.dwmkerr.com/tips-and-tricks-for-beautifully-simple-mobile-app-ci/](http://www.dwmkerr.com/tips-and-tricks-for-beautifully-simple-mobile-app-ci/)
 
 #### Performance
-1.Keys in list
+
+1.Keys in list  
 2.Should component Update
+
+
+
+test
+
