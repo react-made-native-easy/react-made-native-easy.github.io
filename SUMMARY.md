@@ -4,7 +4,7 @@
 * [Audience](audience.md)
 * [React Native Internals](./3-react-native-internals/react-native-internals.md)
 * [Setting up the project](setting-up-the-project.md)
-  * [Installing react-native](setting-up-the-project/installing-react-native.md)
+  * [Getting Started](setting-up-the-project/installing-react-native.md)
   * Using React-Native Debugger for debugging
   * Travis CI setup
   * Test Fairy setup
