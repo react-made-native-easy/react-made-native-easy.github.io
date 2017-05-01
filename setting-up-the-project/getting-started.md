@@ -14,7 +14,7 @@ brew install yarn
 
 * **node**  -  We recommend that you install the latest version of Node.js from`https://nodejs.org/en/download/` . 
 * **watchman** - Watchman is a file watcher from facebook. It watches files and records when they change. It can also trigger certain actions when matching files change. To know more you can visit `https://facebook.github.io/watchman/`.
-* **yarn** - Yarn is a package manager for JavaScript , an alternative npm client.
+* **yarn** - Yarn is a package manager for JavaScript - an alternative npm client.
 
 
 
