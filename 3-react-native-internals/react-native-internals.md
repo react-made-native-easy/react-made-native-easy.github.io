@@ -29,6 +29,7 @@ If we consider the big picture, there are three parts to the RN platform:
   It was first introduced in IOS 7 along with OSX Mavericks.<br/>
   https://developer.apple.com/reference/javascriptcore.
 
+
   In case of Android, React Native bundles the JavaScriptCore along with the application. This increases the app size. Hence the hellow world application of RN would take around 3 to 4 megabytes.
 
   In case of Chrome debugging mode, the JavaScript code runs within Chrome itself (instead of the JavaScriptCore on the device) and communicates with native code via WebSocket. So, here it will use the V8 engine. This allows us to see a lot of information on the chrome debugging tools like network requests, console logs ,etc. 😎
