@@ -9,7 +9,7 @@
   * Travis CI setup
   * Test Fairy setup
   * Github Releases
-* Project Structure and start building &lt;some&gt; app
+* [Project Structure and start building &lt;some&gt; app](project-structure-and-start-building-some-app.md)
 * Coventions and Code Style
   * [Utilizing the Power of ESLINT for consistent code](./6-conventions-and-code-style/eslint.md)
   * [Github Pre-push/Pre-commit Hooks](./6-conventions-and-code-style/git-pre-hooks.md)
