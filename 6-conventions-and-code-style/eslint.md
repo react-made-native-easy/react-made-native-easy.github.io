@@ -1,8 +1,46 @@
-### Utilizing the Power of ESLINT for consistent code
+## Eslint : The guardian of code conventions
 
-You have to trust us on this, ESLINT can increase your speed of development exponentially by making sure that the coding style is consistent throughout the project.
+Every team composes of developers who follow different conventions. Hence , often we find that code written by a developer is not easily understood by another developer in the same team. Thus, this creates dependency on individuals and tight dependencies in a software development project can affect the velocity of the team.
 
-Most of the editors support ESLINT plugin and the plugin has a feature called `lint on save`. It fixes the auto fixable lint errors the moment you save (cmd+s) a file. You can find all the rules [here](http://eslint.org/docs/rules/).
+The best way to solve this is by deciding on and following code conventions.
+
+> We strongly believe that NO convention is bad.
+>
+> As long as there is some convention and it is followed relegiously,  its good.
+
+Code conventions can be as easy as following 4 spaces instead of tabs, or ending a statement always with semicolon. Also, it could be something more complex like not allowing `setState() `of a React Component to be invoked on `componentWillMount`
+
+
+
+Eslint is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code quality evaluator. Basically, it means that eslint will not actually run the code but will read through the source code to see if all the pre - configured code conventions are followed by the developers. 
+
+Eslint allows to maintain consistent code style throughout the project. Thus, any developer of the team can easily understand the code written by another developer. This can exponentially increase the teams velocity and avoid dependencies.
+
+Apart from code conventions , eslint also spots common mistakes  made by developers. For example, 
+
+```
+var a = 1, b = 2, c = 3, e = 4;
+
+var test = function() {
+console.log(a, b, c, d, e);
+};
+```
+
+The above code will compile fine. But as soon as u run it , it will throw a runtime exception` ReferenceError`
+
+```
+test()
+
+VM206:4 Uncaught ReferenceError: d is not defined
+    at test (<anonymous>:4:22)
+    at <anonymous>:1:1
+test @ VM206:4
+(anonymous) @ VM222:1
+```
+
+These mistakes can be easily detected by eslint.
+
+Most of the editors support ESLINT plugin and the plugin has a feature called `lint on save`. It fixes the auto fixable lint errors the moment you save \(cmd+s\) a file. You can find all the rules [here](http://eslint.org/docs/rules/).
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
@@ -10,10 +48,11 @@ We wrote our ESLINT config file ourself and you can also write it yourself or re
 
 Some of my favorite rules are:
 
-- `react/no-did-mount-set-state`
-- `react/no-direct-mutation-state`
-- `react/prop-types`
-- `react/jsx-no-bind`
-- `react/jsx-no-duplicate-props`
+* `react/no-did-mount-set-state`
+* `react/no-direct-mutation-state`
+* `react/prop-types`
+* `react/jsx-no-bind`
+* `react/jsx-no-duplicate-props`
 
 We also suggest using eslint for spacing/tabs instead of `.editorconfig`. This way, all the configuration level stuff would be coming from a single config file. and we can use the power of eslint auto fix to lint/indent file on save.
+
