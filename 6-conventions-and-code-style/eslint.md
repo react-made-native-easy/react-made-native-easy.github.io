@@ -83,7 +83,7 @@ A editor configured with eslint would look something like this.
 
 ![](/assets/images/eslint-error-editor.png)
 
-Also some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces,etc the moment you  hit save \(cmd+s\) on a file. You can find all the rules [here](http://eslint.org/docs/rules/).
+Also some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file. You can find all the rules [here](http://eslint.org/docs/rules/).
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
