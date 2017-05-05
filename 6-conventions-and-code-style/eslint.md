@@ -135,17 +135,39 @@ The important area in the above configuration is the rules section. This section
 
 Complete list of all the available rules are present here:  [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
 
+It can be pretty overwhelming at first to decide which rules should go in. Hence we can start with 
+
+```js
+"extends": ["eslint:recommended", "plugin:react/recommended"]
+```
+
+These should cover all the basic rules needed.
+
+But we recomment you add 
+
+```js
+"rules": {
+    "react/no-did-mount-set-state": 2,
+    "react/no-direct-mutation-state": 2,
+    "react/jsx-uses-vars": 2,
+    "no-undef": 2,
+    "semi": 2,
+    "react/prop-types": 2,
+    "react/jsx-no-bind": 2,
+    "react/jsx-no-duplicate-props": 2,
+    ....
+    ....
+    ....
+  },
+
+```
+
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
 We wrote our ESLINT config file ourself and you can also write it yourself or refer to the file that we created. We recommend everyone should have at least these rules. It contains all the minimalistic things required. You can of course change it as per your needs. The best part is that all of our rules are auto fixable.
 
 Some of my favorite rules are:
 
-* `react/no-did-mount-set-state`
-* `react/no-direct-mutation-state`
-* `react/prop-types`
-* `react/jsx-no-bind`
-* `react/jsx-no-duplicate-props`
-
+* 
 We also suggest using eslint for spacing/tabs instead of `.editorconfig`. This way, all the configuration level stuff would be coming from a single config file. and we can use the power of eslint auto fix to lint/indent file on save.
 
