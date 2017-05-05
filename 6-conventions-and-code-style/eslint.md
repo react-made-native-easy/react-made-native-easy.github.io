@@ -83,11 +83,11 @@ A editor configured with eslint would look something like this.
 
 ![](/assets/images/eslint-error-editor.png)
 
-Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file. 
+Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file.
 
 **Eslint** can be configured via a configuration file `.eslintrc` which should be placed in the root directory of the project.
 
-A typical .eslintrc file looks like this :
+A typical `.eslintrc` file looks like this :
 
 ```js
 # "off" or 0 - turn the rule off
