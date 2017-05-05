@@ -131,9 +131,9 @@ A sample `.eslintrc` file looks like this :
 }
 ```
 
-The important area of the above configuration is the rules section.  
+The important area of the above configuration is the rules section. This section controls all the conventions followed in the project.
 
-You can find all the rules [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
+Complete list of all the available rules are present here:  [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
