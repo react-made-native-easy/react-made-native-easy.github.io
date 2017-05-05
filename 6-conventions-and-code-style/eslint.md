@@ -1,4 +1,4 @@
-## Eslint : The guardian of code conventions ⚔️
+## Eslint: The guardian of code conventions ⚔️
 
 Every team composes of developers who follow different conventions. Hence, often we find that code written by a developer is not easily understood by another developer in the same team. This creates dependencies on individuals and tight dependencies in a software development project can affect the velocity of the team.
 
