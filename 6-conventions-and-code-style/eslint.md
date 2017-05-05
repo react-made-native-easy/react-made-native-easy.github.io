@@ -1,24 +1,22 @@
 ## Eslint : The guardian of code conventions
 
-Every team composes of developers who follow different conventions. Hence , often we find that code written by a developer is not easily understood by another developer in the same team. Thus, this creates dependency on individuals and tight dependencies in a software development project can affect the velocity of the team.
+Every team composes of developers who follow different conventions. Hence, often we find that code written by a developer is not easily understood by another developer in the same team. This creates dependencies on individuals and tight dependencies in a software development project can affect the velocity of the team.
 
-The best way to solve this is by deciding on and following code conventions.
+The best way to solve this is by deciding and following code conventions.
 
 > We strongly believe that NO convention is bad.
 >
 > As long as there is some convention and it is followed relegiously,  its good.
 
-Code conventions can be as easy as following 4 spaces instead of tabs, or ending a statement always with semicolon. Also, it could be something more complex like not allowing `setState() `of a React Component to be invoked on `componentWillMount`
+Code conventions can be as easy as following 4 spaces instead of tabs, or ending a statement always with semicolon, etc. It could also be something more complex like not allowing `setState()`to be invoked on `componentWillMount`of a React Component.
 
-
-
-Eslint is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code quality evaluator. Basically, it means that eslint will not actually run the code but will read through the source code to see if all the pre - configured code conventions are followed by the developers. 
+Eslint is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code evaluator. Basically, it means that eslint will not actually run the code but will instead read through the source code to see if all the pre - configured code conventions are followed by the developers.
 
 Eslint allows to maintain consistent code style throughout the project. Thus, any developer of the team can easily understand the code written by another developer. This can exponentially increase the teams velocity and avoid dependencies.
 
-Apart from code conventions , eslint also spots common mistakes  made by developers. For example, 
+Apart from code conventions , eslint also spots common mistakes  made by developers. For example,
 
-```
+```js
 var a = 1, b = 2, c = 3, e = 4;
 
 var test = function() {
@@ -26,9 +24,9 @@ console.log(a, b, c, d, e);
 };
 ```
 
-The above code will compile fine. But as soon as u run it , it will throw a runtime exception` ReferenceError`
+The above code will compile fine. But as soon as u run it , it will throw a runtime exception`ReferenceError`
 
-```
+```js
 test()
 
 VM206:4 Uncaught ReferenceError: d is not defined
@@ -39,6 +37,45 @@ test @ VM206:4
 ```
 
 These mistakes can be easily detected by eslint.
+
+It is pretty easy to setup eslint for a project. 
+
+```
+yarn add --dev eslint
+```
+
+This would install eslint as your dev dependency.
+
+And then in your `package.json` add a `npm script` as below.
+
+So now your `package.json` should have
+
+```js
+{
+  "name": "testapp",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    ....
+    ....
+    ....
+     "lint": "eslint app/",
+     "lint:fix": "eslint app/ --fix"
+  },
+  "dependencies": {
+  ....
+  ....
+```
+
+Now you can simply run 
+
+```
+npm run lint
+or 
+npm run lint:fix
+```
+
+`npm run lint` will just run the eslint and show a list of errors that need to be fixed.`npm run lint:fix` will run eslint and attempt to correct the errors it is able to fix automatically.
 
 Most of the editors support ESLINT plugin and the plugin has a feature called `lint on save`. It fixes the auto fixable lint errors the moment you save \(cmd+s\) a file. You can find all the rules [here](http://eslint.org/docs/rules/).
 
