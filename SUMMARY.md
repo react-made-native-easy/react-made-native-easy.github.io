@@ -11,7 +11,7 @@
   * [Github Releases](setting-up-the-project/github-releases.md)
 * [Project Structure and start building &lt;some&gt; app](project-structure-and-start-building-some-app.md)
 * [Coventions and Code Style](coventions-and-code-style.md)
-  * [Utilizing the Power of ESLINT for consistent code](./6-conventions-and-code-style/eslint.md)
+  * [E slint : The guardian of code conventions ⚔️](./6-conventions-and-code-style/eslint.md)
   * [Github Pre-push/Pre-commit Hooks](./6-conventions-and-code-style/git-pre-hooks.md)
   * [Environment Variables](./6-conventions-and-code-style/environment-variables.md)
   * [Speed up development with some and ES7 features 🤘](./6-conventions-and-code-style/es7-features.md)
