@@ -10,7 +10,7 @@ The best way to solve this is by deciding and following code conventions.
 
 Code conventions can be as easy as following 4 spaces instead of tabs, or ending a statement always with semicolon, etc. It could also be something more complex like not allowing `setState()`to be invoked on `componentWillMount`of a React Component.
 
-Eslint is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code evaluator. Basically, it means that eslint will not actually run the code but will instead read through the source code to see if all the pre - configured code conventions are followed by the developers.
+**Eslint** is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code evaluator. Basically, it means that eslint will not actually run the code but will instead read through the source code to see if all the pre - configured code conventions are followed by the developers.
 
 Eslint allows to maintain consistent code style throughout the project. Thus, any developer of the team can easily understand the code written by another developer. This can exponentially increase the teams velocity and avoid dependencies.
 
@@ -83,7 +83,55 @@ A editor configured with eslint would look something like this.
 
 ![](/assets/images/eslint-error-editor.png)
 
-Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file. You can find all the rules [here](http://eslint.org/docs/rules/).
+Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file. 
+
+**Eslint** can be configured via a configuration file `.eslintrc` which should be placed in the root directory of the project.
+
+A typical .eslintrc file looks like this :
+
+```js
+# "off" or 0 - turn the rule off
+# "warn" or 1 - turn the rule on as a warning(doesn’ t affect exit code)
+# "error" or 2 - turn the rule on as an error(exit code is 1 when triggered)
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "react/no-did-mount-set-state": 2,
+    "react/no-direct-mutation-state": 2,
+    "react/jsx-uses-vars": 2,
+    "no-undef": 2,
+    "semi": 2,
+    "react/prop-types": 2,
+    "react/jsx-no-bind": 2,
+    "react/jsx-no-duplicate-props": 2,
+    ....
+    ....
+    ....
+  },
+  "globals": {
+    "GLOBAL": false,
+    "it": false,
+    "expect": false,
+    "describe": false,
+    ....
+    ....
+    ....
+   }
+}
+```
+
+You can find all the rules [here](http://eslint.org/docs/rules/).
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
