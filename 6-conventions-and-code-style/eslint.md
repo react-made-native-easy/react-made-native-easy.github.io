@@ -77,7 +77,13 @@ npm run lint:fix
 
 `npm run lint` will just run the eslint and show a list of errors that need to be fixed.`npm run lint:fix` will run eslint and attempt to correct the errors it is able to fix automatically.
 
-Most of the editors support ESLINT plugin and the plugin has a feature called `lint on save`. It fixes the auto fixable lint errors the moment you save \(cmd+s\) a file. You can find all the rules [here](http://eslint.org/docs/rules/).
+Now for the icing on the cake. Most modern editors have support for **eslint **via plugins.  The benefit of a text editor eslint plugin is that these plugins suggest correction while we write code itself thus saving a lot of time for the developer.
+
+A editor configured with eslint would look something like this.
+
+![](/assets/images/eslint-error-editor.png)
+
+Also some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces,etc the moment you  hit save \(cmd+s\) on a file. You can find all the rules [here](http://eslint.org/docs/rules/).
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
