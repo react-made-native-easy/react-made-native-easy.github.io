@@ -77,15 +77,17 @@ npm run lint:fix
 
 `npm run lint` will just run the eslint and show a list of errors that need to be fixed.`npm run lint:fix` will run eslint and attempt to correct the errors it is able to fix automatically.
 
-Now for the icing on the cake. Most modern editors have support for **eslint **via plugins.  The benefit of a text editor eslint plugin is that these plugins suggest correction while we write code itself thus saving a lot of time for the developer.
+Now, for the icing on the cake, most modern editors have support for **eslint **via plugins.  The benefit of a text editor eslint plugin is that these plugins suggest correction while we write code itself thus saving a lot of time for the developer.
 
 A editor configured with eslint would look something like this.
 
 ![](/assets/images/eslint-error-editor.png)
 
-Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save \(cmd+s\) on a file.
+Also, some of these plugins also support features like **lint on save.**  Thus, eslint attempts to run`eslint --fix <current_file>` This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save `(cmd+s)` on a file.
 
-**Eslint** can be configured via a configuration file `.eslintrc` which should be placed in the root directory of the project.
+We **strongly** recommend to enable this feature.
+
+**Eslint** rules can be configured via a configuration file `.eslintrc` which should be placed in the root directory of the project.
 
 A sample `.eslintrc` file looks like this :
 
@@ -135,7 +137,7 @@ The important area in the above configuration is the rules section. This section
 
 Complete list of all the available rules are present here:  [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
 
-It can be pretty overwhelming at first to decide which rules should go in. Hence we can start with 
+It can be pretty overwhelming at first to decide which rules should go in. Hence we can start with
 
 ```js
 "extends": ["eslint:recommended", "plugin:react/recommended"]
@@ -143,7 +145,7 @@ It can be pretty overwhelming at first to decide which rules should go in. Hence
 
 These should cover all the basic rules needed.
 
-But we recomment you add 
+But we recomment you add these also
 
 ```js
 "rules": {
@@ -159,15 +161,15 @@ But we recomment you add
     ....
     ....
   },
-
 ```
 
-Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
+Rest of the rules can be added based on what conventions the team decides to follow  in the project.
 
-We wrote our ESLINT config file ourself and you can also write it yourself or refer to the file that we created. We recommend everyone should have at least these rules. It contains all the minimalistic things required. You can of course change it as per your needs. The best part is that all of our rules are auto fixable.
+A suggestion would be that we add more of auto-fixable rules as the corrections suggested by these rules can be auto fixed by the editor with eslint plugin while saving the file itself. This would reduce the time that a developer would spend fixing lint than writing actual code.
 
-Some of my favorite rules are:
 
-* 
+
 We also suggest using eslint for spacing/tabs instead of `.editorconfig`. This way, all the configuration level stuff would be coming from a single config file. and we can use the power of eslint auto fix to lint/indent file on save.
+
+
 
