@@ -1,4 +1,4 @@
-## Eslint : The guardian of code conventions
+## Eslint : The guardian of code conventions ⚔️
 
 Every team composes of developers who follow different conventions. Hence, often we find that code written by a developer is not easily understood by another developer in the same team. This creates dependencies on individuals and tight dependencies in a software development project can affect the velocity of the team.
 
@@ -38,7 +38,7 @@ test @ VM206:4
 
 These mistakes can be easily detected by eslint.
 
-It is pretty easy to setup eslint for a project. 
+It is pretty easy to setup eslint for a project.
 
 ```
 yarn add --dev eslint
@@ -67,7 +67,7 @@ So now your `package.json` should have
   ....
 ```
 
-Now you can simply run 
+Now you can simply run
 
 ```
 npm run lint
