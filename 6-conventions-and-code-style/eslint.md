@@ -167,9 +167,5 @@ Rest of the rules can be added based on what conventions the team decides to fol
 
 A suggestion would be that we add more of auto-fixable rules as the corrections suggested by these rules can be auto fixed by the editor with eslint plugin while saving the file itself. This would reduce the time that a developer would spend fixing lint than writing actual code.
 
-
-
-We also suggest using eslint for spacing/tabs instead of `.editorconfig`. This way, all the configuration level stuff would be coming from a single config file. and we can use the power of eslint auto fix to lint/indent file on save.
-
-
+Also  we recommend  using eslint for spacing/tabs instead of other methods like`.editorconfig`. This way, all the code conventions can be configured via single utility **\(eslint\)**. Also, indentations and spacing can be auto fixed by the editor itself with auto fix on save.
 
