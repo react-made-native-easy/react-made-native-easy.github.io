@@ -87,7 +87,7 @@ Also, some of these plugins also support features like **lint on save.**  Thus, 
 
 **Eslint** can be configured via a configuration file `.eslintrc` which should be placed in the root directory of the project.
 
-A typical `.eslintrc` file looks like this :
+A sample `.eslintrc` file looks like this :
 
 ```js
 # "off" or 0 - turn the rule off
@@ -131,7 +131,9 @@ A typical `.eslintrc` file looks like this :
 }
 ```
 
-You can find all the rules [here](http://eslint.org/docs/rules/).
+The important area of the above configuration is the rules section.  
+
+You can find all the rules [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
 
 Now you have to use this carefully. If you try to use everything or if you extend a plugin and use all the rules, you might end up spending hell lot of time fixing lint than writing code. So we suggest you to use rules which are auto fixable.
 
