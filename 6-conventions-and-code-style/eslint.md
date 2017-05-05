@@ -131,7 +131,7 @@ A sample `.eslintrc` file looks like this :
 }
 ```
 
-The important area in the above configuration is the rules section. This section controls all the conventions followed in the project.
+The important area in the above configuration is the rules section. This section controls all the code conventions followed in the project.
 
 Complete list of all the available rules are present here:  [http://eslint.org/docs/rules/](http://eslint.org/docs/rules/)
 
