@@ -169,5 +169,5 @@ A suggestion would be that we add more of auto-fixable rules as the corrections 
 
 Also  we recommend  using eslint for spacing/tabs instead of other methods like`.editorconfig`. This way, all the code conventions can be configured via single utility **\(eslint\)**. Also, indentations and spacing can be auto fixed by the editor itself with auto fix on save.
 
-Eslint if configured properly can increase the productivity of team exponentially while maintaing code quality. It can prevent human errors and can act as a guardian who maintains code conventions.
+Eslint if configured properly can increase the productivity of team exponentially while maintaing code quality. It can prevent human errors and can act as a guardian that maintains code conventions.
 
