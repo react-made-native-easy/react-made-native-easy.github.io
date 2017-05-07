@@ -9,7 +9,7 @@ We all have used constructor() in our class components and had to use `.bind` wh
 
 By using this feature, you can define class members (`state` for eg.) without the need of `constructor`.
 So instead of,
-```
+```js
 class SomeComponent extends Component {
   constructor() {
     super();
@@ -35,7 +35,7 @@ class SomeComponent extends Component {
 Using the above feature, we can also define arrow functions as class instances and since arrow functions does not have their own scope, the `this` inside arrow function will always point to the class. Therefore you do not need to do binding of `this` inside constructor. And in most of the cases, you would not be required to use constructor at all. In our project, we never used constructor in any of the components 🤘
 
 Before:
-```
+```js
 class SomeComponent extends Component {
   _incrementCounter() {
     this.setState({count: this.state.count+1})
@@ -47,7 +47,7 @@ class SomeComponent extends Component {
 }
 ```
 After:
-```
+```js
 class SomeComponent extends Component {
   _incrementCounter = () => {
     this.setState({count: this.state.count+1})
@@ -64,7 +64,7 @@ You might say that there is nothing new in this. But if used well, it can make y
 
 
 Before
-```
+```js
 class SomeComponent extends Component {
   static defaultProps = {
     someProp: {}
@@ -77,7 +77,7 @@ class SomeComponent extends Component {
 
 After
 
-```
+```js
 class SomeComponent extends Component {
   render() {
     const {someProp={}} = this.props;
