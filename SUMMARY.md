@@ -16,7 +16,7 @@
   * [Environment Variables](./6-conventions-and-code-style/environment-variables.md)
   * [Speed up development with some and ES7 features 🤘](./6-conventions-and-code-style/es7-features.md)
   * [Axios and API mocks](6-conventions-and-code-style/axios-and-api-mocks.md)
-* Testing
+* [Testing](testing.md)
   * Jest setup
   * Snapshots
   * Mocking RN modules
@@ -52,4 +52,3 @@
   * [Reusing business logic across platforms](migrating-to-web/reusing-business-logic-across-platforms.md)
 * GOTCHAS
 * How Agile helped us
-
