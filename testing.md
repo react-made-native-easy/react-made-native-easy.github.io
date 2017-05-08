@@ -29,4 +29,4 @@ We all have asked/been asked this question at least once. And agree or not, the 
 
 - Does __NOT__ increase the dev time:
 
-    Many of us give this excuse that writing test cases will increase the dev time(Even I used to do this). But believe me it doesn't. During the course of development almost half of the time is spent in fixing bugs. Writing unit tests can decrease the this value from 50% to less than 20%.
+    Many of us give this excuse that writing test cases will increase the dev time(Even I used to do this). But believe me it doesn't. During the course of development almost half of the time is spent in debugging/bug fixing .Writing unit tests can decrease the this value from 50% to less than 20%.
