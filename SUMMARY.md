@@ -17,7 +17,7 @@
   * [Speed up development with some and ES7 features 🤘](./6-conventions-and-code-style/es7-features.md)
   * [Axios and API mocks](6-conventions-and-code-style/axios-and-api-mocks.md)
 * [Testing](testing.md)
-  * Jest setup
+  * [Jest setup](testing/jest-setup.md)
   * Snapshots
   * Mocking RN modules
   * Testing stateful components using Enzyme
