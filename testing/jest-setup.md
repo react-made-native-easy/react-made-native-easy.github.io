@@ -1,0 +1,86 @@
+## Jest setup
+
+For all who have not heard about jest, have a quick look here: https://facebook.github.io/jest/
+
+>Jest is used by Facebook to test all JavaScript code including React applications. One of Jest's philosophies is to provide an integrated "zero-configuration" experience. We observed that when engineers are provided with ready-to-use tools, they end up writing more tests, which in turn results in more stable and healthy code bases.
+
+We used Jest because of the following reasons:
+
+- Minimal Configuration.
+- Watch only changed files.
+- Fast
+- Snapshot testing(Explained later)
+- Coverage out of box
+
+### 4 important test scripts every project should have
+
+```json
+"scripts": {
+    "test": "jest --verbose --coverage",
+    "test:update": "jest --verbose --coverage --updateSnapshot",
+    "test:watch": "jest --verbose --watch",
+    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+  }
+```
+
+- `test`: It will go through all the test files and execute them. This command will also be used in pre-hooks and CI checks.
+- `test:watch`: This will watch all the test files. It is very useful while writing tests and quickly see the result.
+- `test:update`: This command will update snapshots for all the presentational components. If the snapshot is not there, it will create it for you. We will discuss snapshots in detail in coming chapters.
+- `coverage`: As the name suggests, this command will generate a coverage report.
+
+
+### Testing conventions:
+
+It is highly recommended to have conventions for test files as well. Here are the conventions we followed:
+
+- Jest recommends having a `__test__` folder in the same location the file which is to be tested is placed.
+- The name convention for test file is `<testFileName>.test.js`.
+if you are writing test for `abc.component.js`, then the test filename would be `abc.component.test.js`.
+- In each `expect`, we write the function name first which is to be tested.
+
+Here is a small example following the above mentioned conventions:
+```js
+//counter.util.js
+const counter = (a) => a + 1;
+
+//__test__/counter.util.test.js
+describe('counter: Should increment the passed value', () => {
+  ...
+});
+```
+
+### JEST configuration:
+
+As we read in the documentation, Jest is indeed very easy to setup. You do not need  a separate config file, the configuration is so simple that it can fit inside `package.json` only.
+
+Here is our jest config:
+```json
+"jest": {
+    "preset": "react-native",
+    "cacheDirectory": "./cache",
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+    "coveragePathIgnorePatterns": [
+      "./app/utils/vendor"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 80
+      }
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native|react-clone-referenced-element|react-navigation)"
+    ]
+  }
+```
+
+- `preset`: The preset is a node environment that mimics the environment of a React Native app. Because it doesn't load any DOM or browser APIs, it greatly improves Jest's startup time.
+
+- `cacheDirectory`: It helps you greatly improve the test speed. It does so by creating cache of compiled modules so that next time it doesn't have to compile the node_modules while running tests.
+
+- `setupTestFrameworkScriptFile`: //Need Atuls help
+
+- `coveragePathIgnorePatterns`: Define the files which want to skip for coverage reports.
+
+- `coverageThreshold`: Defines the threshold limit for all the tests to pass. If the coverage is less than the defined limit, the tests would fail. This helped us to keep a good amount of coverage at all point of time.
+
+- `transformIgnorePatterns`: We pass all the NPM modules here which needs to be transpiled. These modules are basically ES6/7 modules.
