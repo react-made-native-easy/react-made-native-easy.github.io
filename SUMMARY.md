@@ -17,13 +17,13 @@
   * [Speed up development with some and ES7 features 🤘](./6-conventions-and-code-style/es7-features.md)
   * [Axios and API mocks](6-conventions-and-code-style/axios-and-api-mocks.md)
 * Testing
-  * Jest setup
-  * Snapshots
-  * Mocking RN modules
+  * [Jest setup](jest-setup.md)
+  * [Snapshots](snapshots.md)
+  * [Mocking RN modules](mocking-rn-modules.md)
   * Testing stateful components using Enzyme
   * FYI Cache
 * Redux
-  * Redux setup
+  * [Redux setup](redux-setup.md)
   * Components VS Page
   * Using redux-actions for pretty-pretty code
   * Thunks and file Structure
