@@ -19,8 +19,8 @@
 * [Testing](testing.md)
   * [Jest setup](testing/jest-setup.md)
   * [Snapshots](testing/snapshots.md)
-  * Mocking RN modules
-  * Testing stateful components using Enzyme
+  * [Testing stateful components using Enzyme](testing/enzyme-testing.md)
+  * Mocking RN modules  
   * FYI Cache
 * Redux
   * Redux setup
