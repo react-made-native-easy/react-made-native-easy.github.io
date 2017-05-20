@@ -18,7 +18,7 @@
   * [Axios and API mocks](6-conventions-and-code-style/axios-and-api-mocks.md)
 * [Testing](testing.md)
   * [Jest setup](testing/jest-setup.md)
-  * Snapshots
+  * [Snapshots](testing/snapshots.md)
   * Mocking RN modules
   * Testing stateful components using Enzyme
   * FYI Cache
