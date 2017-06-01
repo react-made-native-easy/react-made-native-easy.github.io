@@ -1,8 +1,12 @@
 ## Navigation
 
-React has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\). We found React-navigation the most stable among all the options.
+Navigation in react-native is pretty different, specially if you are coming from web background. It follows native standards for navigation. Example: Screens, stacks, push/pop, which most of us web developers have not used for routing. It is not as simple as doing `dispatch(push('/<routeName>`
+
+ has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\).
 
 
+
+We found React-navigation the most stable among all the options.
 
 ### Why react navigation?
 
