@@ -4,9 +4,7 @@ Navigation in react-native is pretty different, specially if you are coming from
 
 > It is not as simple as doing `dispatch(push('/<routeName>)` , you have to manage screens, reset your stack, nest them properly. If not configured well, it can cause huge performance loss and muliple components being mounted at a single point of time.
 
-React-native has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\).
-
-We found React-navigation the most stable among all the options.
+React-native has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\). We found React-navigation the most stable among all the options.
 
 ### Why react-navigation?
 
