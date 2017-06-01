@@ -35,9 +35,9 @@
   * Separating styles components
 * [Navigation](navigation.md)
   * [Using React-navigation](using-react-navigation.md)
-  * Integrating with redux store
-  * File Structure for routes
-  * Styling headers
+  * [Integrating with redux store](integrating-with-redux-store.md)
+  * [File Structure for routes](file-structure-for-routes.md)
+  * [Styling headers](styling-headers.md)
 * [SVG Icons using react-native-vector-icons](svg-icons-using-react-native-vector-icons.md)
 * [Adding multi language support](adding-multi-language-support.md)
 * [Third Party components](third-party-components.md)
