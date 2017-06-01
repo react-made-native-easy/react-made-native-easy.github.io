@@ -20,21 +20,21 @@
   * [Jest setup](testing/jest-setup.md)
   * [Snapshots](testing/snapshots.md)
   * [Testing stateful components using Enzyme](testing/enzyme-testing.md)
-  * Mocking RN modules  
-  * FYI Cache
-* Redux
-  * Redux setup
-  * Components VS Page
-  * Using redux-actions for pretty-pretty code
-  * Thunks and file Structure
-  * Redux forms V6.5 🤘
+  * [Mocking RN modules  ](testing/mocking-rn-modules.md)
+  * [FYI Cache](testing/fyi-cache.md)
+* [Redux](redux.md)
+  * [Redux setup](redux/redux-setup.md)
+  * [Components VS Page](redux/components-vs-page.md)
+  * [Using redux-actions for pretty-pretty code](redux/using-redux-actions-for-pretty-pretty-code.md)
+  * [Thunks and file Structure](redux/thunks-and-file-structure.md)
+  * [Redux forms V6.5 🤘](redux/redux-forms-v65-d83e-dd18.md)
 * Styling 💅🏻
   * Theme Variables
   * Common Styles/Mixins
   * No Framework approach
   * Separating styles components
-* Navigation
-  * Using React-navigation
+* [Navigation](navigation.md)
+  * [Using React-navigation](using-react-navigation.md)
   * Integrating with redux store
   * File Structure for routes
   * Styling headers
@@ -52,3 +52,4 @@
   * [Reusing business logic across platforms](migrating-to-web/reusing-business-logic-across-platforms.md)
 * GOTCHAS
 * How Agile helped us
+
