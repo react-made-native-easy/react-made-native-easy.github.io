@@ -7,3 +7,13 @@ This section will cover the following.
 
 
 
+### create-react-native-app OR react-native init OR Expo
+
+React-native has a bunch of options to setup the project. create-react-native-app, react-native init and EXPO are among most popular ones and interestingly all three of them are mentioned in the official website of react-native. It might create a lot of confusion for someone who is starting to setup his/her own boilerplate. 
+
+Here is short desciption for each of them:
+
+* _create-react-native-app:_ It is similar to the creat-react-app. It has all the necessary tasks to run your application. All the necessary setup has been taken care and you can start hacking around react-native. This is very useful if you are starting to learn react-native
+
+
+
