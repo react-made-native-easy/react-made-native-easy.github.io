@@ -1,10 +1,8 @@
 ## Navigation
 
-React has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\)
+React has a bunch of options for routing. \(They have mentioned it here: [https://facebook.github.io/react-native/docs/navigation.html](https://facebook.github.io/react-native/docs/navigation.html)\). We found React-navigation the most stable among all the options.
 
-* We found React-navigation the most stable among all the options.
 
-* It is inspired by NavigationExperimental which was a part of react-native.
 
 ### Why react navigation?
 
