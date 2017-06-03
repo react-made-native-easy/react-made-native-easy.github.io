@@ -28,7 +28,7 @@
   * [Using redux-actions for pretty-pretty code](redux/using-redux-actions-for-pretty-pretty-code.md)
   * [Thunks and file Structure](redux/thunks-and-file-structure.md)
   * [Redux forms V6.5 🤘](redux/redux-forms-v65-d83e-dd18.md)
-* Styling 💅🏻
+* [Styling 💅🏻](styling-d83d-dc85-d83c-dffb.md)
   * Theme Variables
   * Common Styles/Mixins
   * No Framework approach
