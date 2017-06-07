@@ -26,7 +26,7 @@ Let me introduce you to this amazing library called \[react-native-vector-icons\
 `react-native-vector-icons` support using custom icon sets if you do not want to use the icons which come bundled or if you want to add your own icons. It supports Fontello and IcoMoon to create custom fonts. We used icomoon to convert our svgs to a config which is readable by the library.  The steps for the same are as follows:
 
 * Open the [iconmoon application.](https://icomoon.io/app/#/select)
-* Remove the current set and creaye a new empty set.
+* Remove the current set and create a new empty set.
 
 ![](/assets/icomoon-1.png)
 
@@ -37,6 +37,8 @@ Let me introduce you to this amazing library called \[react-native-vector-icons\
 * Select the files which you want to export. Select all if you want to export all the icons. Click Download JSON.
 
 ![](/assets/icomoon3.png)
+
+* TODO: How to import ttf files?
 
 * Put the JSON file in your app and create a file called CustomIcon.js and import the config.json which you exported in the previous step.
 
@@ -54,8 +56,6 @@ import CustomIcon from './components/CustomIcon.js'
 <CustomIcon name='android' /> //To use the icon
 <CustomIcon name='android' size={25} /> // To pass size
 <CustomIcon name='android' style={styles.androidIcon} /> // To pass custom tyle
-
-
 ```
 
 
