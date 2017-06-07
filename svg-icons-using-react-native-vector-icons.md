@@ -13,5 +13,5 @@ Unfortunately, rendering SVGs in native is not as simple as it is in HTML/WEB, w
 
 _Now how do you get the power of SVG in native environment?_
 
-Let me introduce you to this amazing library called \[react-native-vector-icons\]\(https://github.com/oblador/react-native-vector-icons\)
+Let me introduce you to this amazing library called \[react-native-vector-icons\]\([https://github.com/oblador/react-native-vector-icons](https://github.com/oblador/react-native-vector-icons\)\)
 
