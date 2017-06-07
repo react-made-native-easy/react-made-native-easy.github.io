@@ -13,7 +13,15 @@ Unfortunately, rendering SVGs in native is not as simple as it is in HTML/WEB, w
 
 ### How do you get the power of SVG in native environment?
 
-Let me introduce you to this amazing library called \[react-native-vector-icons\]\([https://github.com/oblador/react-native-vector-icons](https://github.com/oblador/react-native-vector-icons%29%29\)\). It comes bundled with a bunch of icon sets\(default is [`FontAwesome`](http://fortawesome.github.io/Font-Awesome/icons/)\). All the fonts are scalable and you can style them just like SVGs. 
+Let me introduce you to this amazing library called \[react-native-vector-icons\]\([https://github.com/oblador/react-native-vector-icons](https://github.com/oblador/react-native-vector-icons%29%29%29\). It comes bundled with a bunch of icon sets\(default is [`FontAwesome`](http://fortawesome.github.io/Font-Awesome/icons/)\).
+
+* All the fonts are scalable and you can style them just like SVGs.
+* It returns a react component which accepts name, etc. as prop. After integration, the usage will be as simple as `<Icon name="rocket" size={30} color="#900" />`
+* You can pass custom style.
+* It also supports a couple of other components which might be useful. Ex, Button with an icon \(`<Icon.Button />`\)
+* You can also create your own iconset if you want to use custom icons.
+
+### Creating custom iconset
 
 You can also create your own iconset by following easy steps mentioned below:
 
