@@ -50,8 +50,12 @@ export default createIconSetFromIcoMoon(icoMoonConfig);
 
 ```js
 import CustomIcon from './components/CustomIcon.js'
-//To use it as an icon
-<CustomIcon name='android' />
+
+<CustomIcon name='android' /> //To use the icon
+<CustomIcon name='android' size={25} /> // To pass size
+<CustomIcon name='android' style={styles.androidIcon} /> // To pass custom tyle
+
+
 ```
 
 
