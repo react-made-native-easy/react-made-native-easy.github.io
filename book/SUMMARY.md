@@ -9,6 +9,8 @@
   * [Test Fairy setup](4-setting-up-the-project/4.4-test-fairy-setup.md)
   * [Github Releases](4-setting-up-the-project/4.5-github-releases.md)
 * [Project Structure and start building &lt;some&gt; app](5-project-structure-and-start-building-some-app/5.0-intro.md)
+  * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
+  * [Creating basic components and writing platform specific code](5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.md)
 * [Coventions and Code Style](6-conventions-and-code-style/6.0-intro.md)
   * [Eslint : The guardian of code conventions ⚔️](6-conventions-and-code-style/6.1-eslint.md)
   * [Github Pre-push/Pre-commit Hooks](6-conventions-and-code-style/6.2-git-pre-hooks.md)
