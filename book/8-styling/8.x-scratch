@@ -1,0 +1,70 @@
+
+Reuse Components, Not Styles
+When building for the web, we have a countless number of ways to organize our CSS whether that’s using a tool like Sass, Less, PostCSS, etc. This allows us create a hierarchy for our application that makes sense. In the end, we let our tool build all our CSS together to form one cohesive stylesheet for our entire application.
+In React Native, we must think of styling in a slightly different manner. Instead of writing one large StyleSheet, we want to continue writing small bite-sized styles. This means that anything and everything that can be reused should be a component. Let’s look at an example:
+In a typical web-application, we might write a class to style our buttons.
+.button {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+In React Native, there’s no good way to share styles without writing one large StyleSheet (bad) but we still want to break this styling into it’s own component, say a Button component.
+To start, we might want to create two new files, components/Button/index.js and components/Button/styles.js. These files might look like the following:
+# components/Button/index.js
+import React from 'react';
+import {
+  TouchableHighlight,
+  Text,
+} from 'react-native';
+import styles from './styles';
+const Button = () => (
+  <TouchableHighlight style={styles.container}>
+    <Text style={styles.button}>Click Me</Text>
+  </TouchableHighlight>
+)
+export default Button;
+# components/Button/styles.js
+import { StyleSheet } from 'react-native';
+export default StyleSheet.create({
+  container: {
+    borderRadius: 5,
+  },
+  button: {
+    backgroundColor: '#111',
+    color: '#fff',
+    borderRadius: 5,
+    padding: 15,
+  },
+});
+Now, whenever we want to include a button in our application, we simply import the Button component which will have all necessary styles ready to go.
+Let’s talk a moment about container versus button above.
+Black Boxes
+The TouchableHighlight component in React Native is a special component that gives a user feedback on a tap (click) event they just performed. Without it, the user would tap your button and would receive no feedback (although it would still work.)
+TouchableHighlight has some quirks about it especially around transparency. If we didn’t include the borderRadius: 5, we’d have some ugly black boxes around our button whenever we clicked it. You want to ensure that whenever you have a TouchableHighlight, you account for all transparent and non-transparent elements within the component. To rid ourselves of the dreaded black boxes surrounding our button when tapping it, we simply give the TouchableHighlight a matching border radius to ensure there are no transparent pixels to fill in.
+Define Common Styles
+Chances are you’re not going to have a handful of different styles for colors, font sizes, padding, etc. For styles that are shared amongst many components, it’s a good idea to write a common stylesheet that can be imported into other stylesheets.
+An example of a common stylesheet might look like the following:
+# styles/common.js
+export const COLOR_PRIMARY = '#58C9B9';
+export const COLOR_SECONDARY = '#111';
+export const FONT_NORMAL = 'OpenSans-Regular';
+export const FONT_BOLD = 'OpenSans-Bold';
+export const BORDER_RADIUS = 5;
+Now when we write out StyleSheets, we can easily use these common styles.
+# components/Button/styles.js
+import { StyleSheet } from 'react-native';
+import { COLOR_PRIMARY, BORDER_RADIUS } from './../styles/common';
+export default StyleSheet.create({
+  container: {
+    borderRadius: BORDER_RADIUS,
+  },
+  button: {
+    backgroundColor: COLOR_PRIMARY,
+    borderRadius: BORDER_RADIUS,
+  },
+});
+Conclusion
+React Native is a fast and easy way to build native applications for the iPhone and Android devices.
+By doing some simple planning and organization before you start coding your components will help you tremendously in the long-run by eliminating unnecessary code duplication. A common StyleSheet is useful, especially when a marketing department might want to change the font and colors of the application.
+By following these practices, you’ll have a lean and manageable React Native application that any developer can follow.
