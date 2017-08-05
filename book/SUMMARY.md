@@ -40,6 +40,7 @@
   * [Test Fairy setup](11-setting-up-the-project/11.4-test-fairy-setup.md)
   * [Github Releases](11-setting-up-the-project/11.5-github-releases.md)
 * [SVG Icons using react-native-vector-icons](12-svg-icons-using-react-native-vector-icons/12.0-intro.md)
+  * [Custom Icon set](12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.md)
 * [Axios and API mocks](13-conventions-and-code-style/13.5-axios-and-api-mocks.md)
 * [Adding multi language support](14-adding-multi-language-support/14.0-intro.md)
 * [Third Party components](15-third-party-components/15.0-intro.md)
