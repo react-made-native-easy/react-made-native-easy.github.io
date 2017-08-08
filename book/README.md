@@ -1,4 +1,4 @@
-## react-native made easy for react developers
+## React Native made easy for React Developers
 
 #### React Conventions + JavaScript Best Practices + Robust DevOps pipeline = Production grade native app for iOS, Android \(and Web\).
 
@@ -11,4 +11,3 @@ This book is for the Web developers who have already got their hands dirty with 
 * How you can extend your react-native codebase to support web by just following some code conventions.
 
 We are following native-first approach with an eye on web. You will eventually see how easy it is port the application to Web by following conventions and stuff.
-
