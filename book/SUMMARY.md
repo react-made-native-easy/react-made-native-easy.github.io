@@ -25,7 +25,7 @@
   * [Separating styles from component](8-styling/8.3-separating-styles-from-component.md)
 * [Redux](9-redux/9.0-intro.md)
   * [Redux setup](9-redux/9.1-redux-setup.md)
-  * [Components VS Page](9-redux/9.2-components-vs-page.md)
+  * [Presentational VS Containers](9-redux/9.2-presentational-vs-containers.md)
   * [Using redux-actions for pretty-pretty code](9-redux/9.3-using-redux-actions-for-pretty-pretty-code.md)
   * [Thunks and file Structure](9-redux/9.4-thunks-and-file-structure.md)
 * [Navigation](10-navigation/10.0-intro.md)
