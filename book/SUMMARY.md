@@ -40,7 +40,7 @@
 * [Internationalization](13-internationalization/13.1-framework-intro.md)
   * [Adding language toggle feature](13-internationalization/13.2-language-toggle.md)
   * [Integration with react-navigation](13-internationalization/13.3-integration-with-react-navigation.md)
-* [Axios and API mocks](14-conventions-and-code-style/14-axios-and-api-mocks.md)
+* [Axios and API mocks](14-axios-and-api-mocks/14-intro.md)
 * [Third Party components](15-third-party-components/15.0-intro.md)
   * [When should I search for pre-built components](15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md)
   * [Linking components](15-third-party-components/15.2-linking-components.md)
