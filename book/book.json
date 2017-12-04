@@ -1,0 +1,3 @@
+{
+    "plugins": ["-lunr", "-search", "search-plus"]
+}
