@@ -1,3 +1,16 @@
 {
-    "plugins": ["-lunr", "-search", "search-plus"]
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus",
+    "disqus"
+  ],
+  "pdf": {
+    "paperSize": "a4"
+  },
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "rnMadeEasy"
+    }
+  }
 }

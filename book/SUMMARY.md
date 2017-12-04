@@ -1,10 +1,12 @@
 # Summary
 
 * [Introduction](README.md)
-* [Audience](2-audience/2.1-audience.md)
 * [React Native Internals](3-react-native-internals/3.1-react-native-internals.md)
 * [Setting up the project](4-setting-up-the-project/4.1-installing-react-native.md)
-* [Project Structure and start building &lt;some&gt; app](5-project-structure-and-start-building-some-app/5.0-intro.md)
+
+Start building the app
+----
+* [Project Structure](5-project-structure-and-start-building-some-app/5.0-intro.md)
   * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
   * [Creating basic components and writing platform specific code](5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.md)
 * [Coventions and Code Style](6-conventions-and-code-style/6.0-intro.md)
@@ -17,8 +19,8 @@
   * [Snapshots](7-testing/7.2-snapshots.md)
   * [Testing stateful components using Enzyme](7-testing/7.3-enzyme-testing.md)
   * [Mocking RN modules  ](7-testing/7.4-mocking-rn-modules.md)
-  * [FYI Cache](7-testing/7.5-fyi-cache.md)
-  * [Using React-Native Debugger for debugging](7-testing/7.6-using-react-native-debugger-for-debugging.md)
+  <!-- * [FYI Cache](7-testing/7.5-fyi-cache.md) -->
+  <!-- * [Using React-Native Debugger for debugging](7-testing/7.6-using-react-native-debugger-for-debugging.md) -->
 * [Styling 💅🏻](8-styling/8.0-intro.md)
   * [Theme Variables](8-styling/8.1-theme-variables.md)
   * [Common Styles/Mixins](8-styling/8.2-common-styles-mixins.md)
@@ -40,16 +42,17 @@
 * [Internationalization](13-internationalization/13.1-framework-intro.md)
   * [Adding language toggle feature](13-internationalization/13.2-language-toggle.md)
   * [Integration with react-navigation](13-internationalization/13.3-integration-with-react-navigation.md)
-* [Axios and API mocks](14-axios-and-api-mocks/14-intro.md)
-* [Third Party components](15-third-party-components/15.0-intro.md)
+<!-- * [Axios and API mocks](14-axios-and-api-mocks/14-intro.md) -->
+<!-- * [Third Party components](15-third-party-components/15.0-intro.md)
   * [When should I search for pre-built components](15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md)
   * [Linking components](15-third-party-components/15.2-linking-components.md)
-  * [Recommended components](15-third-party-components/15.3-recommended-components.md)
+  * [Recommended components](15-third-party-components/15.3-recommended-components.md) -->
 * [Custom Native Modules](16-custom-native-modules/16.0-intro.md)
   * [Android Native Modules](16-custom-native-modules/16.1-android-native-module.md)
   * [iOS Native Modules](16-custom-native-modules/16.2-ios-native-module.md)
-* [Migrating to WEB](17-migrating-to-web/17.0-intro.md)
+
+<!-- * [Migrating to WEB](17-migrating-to-web/17.0-intro.md)
   * [Interface File](17-migrating-to-web/17.1-interface-file.md)
   * [Rewrite all Dumb components](17-migrating-to-web/17.2-rewrite-all-dumb-components.md)
-  * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md)
-* [GOTCHAS](18-Gotchas/18.0-intro.md)
+  * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md) -->
+<!-- * [GOTCHAS](18-Gotchas/18.0-intro.md) -->
