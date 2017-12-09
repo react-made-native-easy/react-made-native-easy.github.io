@@ -4,6 +4,7 @@
     "-search",
     "search-plus",
     "disqus",
+    "expo-snack"
     "ga"
   ],
   "pdf": {
