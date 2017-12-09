@@ -3,7 +3,8 @@
     "-lunr",
     "-search",
     "search-plus",
-    "disqus"
+    "disqus",
+    "ga"
   ],
   "pdf": {
     "paperSize": "a4"
@@ -11,6 +12,9 @@
   "pluginsConfig": {
     "disqus": {
       "shortName": "rnMadeEasy"
+    },
+    "ga": {
+      "token": "UA-XXXX-Y"
     }
   }
 }
