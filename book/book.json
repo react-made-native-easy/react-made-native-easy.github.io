@@ -5,6 +5,7 @@
     "search-plus",
     "disqus",
     "expo-snack"
+    "ga"
   ],
   "pdf": {
     "paperSize": "a4"
@@ -12,6 +13,9 @@
   "pluginsConfig": {
     "disqus": {
       "shortName": "rnMadeEasy"
+    },
+    "ga": {
+      "token": "UA-XXXX-Y"
     }
   }
 }
