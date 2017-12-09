@@ -3,7 +3,8 @@
     "-lunr",
     "-search",
     "search-plus",
-    "disqus"
+    "disqus",
+    "expo-snack"
   ],
   "pdf": {
     "paperSize": "a4"
