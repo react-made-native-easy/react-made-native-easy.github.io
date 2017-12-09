@@ -1,0 +1,1056 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Creating basic components and writing platform specific code · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../6-conventions-and-code-style/6.0-intro.html" />
+    
+    
+    <link rel="prev" href="5.1-customising-the-structure.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                <a href="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                    
+                    React Native Internals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                <a href="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                    
+                    Setting up the project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Start building the app</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="5.0-intro.html">
+            
+                <a href="5.0-intro.html">
+            
+                    
+                    Project Structure
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="5.1-customising-the-structure.html">
+            
+                <a href="5.1-customising-the-structure.html">
+            
+                    
+                    Customizing the project structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="5.2-basic-components-and-platform-specific-code.html">
+            
+                <a href="5.2-basic-components-and-platform-specific-code.html">
+            
+                    
+                    Creating basic components and writing platform specific code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../6-conventions-and-code-style/6.0-intro.html">
+            
+                <a href="../6-conventions-and-code-style/6.0-intro.html">
+            
+                    
+                    Coventions and Code Style
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../6-conventions-and-code-style/6.1-eslint.html">
+            
+                <a href="../6-conventions-and-code-style/6.1-eslint.html">
+            
+                    
+                    Eslint : The guardian of code conventions ⚔️
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../6-conventions-and-code-style/6.2-git-pre-hooks.html">
+            
+                <a href="../6-conventions-and-code-style/6.2-git-pre-hooks.html">
+            
+                    
+                    Github Pre-push/Pre-commit Hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../6-conventions-and-code-style/6.3-environment-variables.html">
+            
+                <a href="../6-conventions-and-code-style/6.3-environment-variables.html">
+            
+                    
+                    Environment Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../6-conventions-and-code-style/6.4-es7-features.html">
+            
+                <a href="../6-conventions-and-code-style/6.4-es7-features.html">
+            
+                    
+                    Speed up development with some and ES7 features 🤘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../7-testing/7.0-intro.html">
+            
+                <a href="../7-testing/7.0-intro.html">
+            
+                    
+                    Testing and Debugging
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../7-testing/7.1-jest-setup.html">
+            
+                <a href="../7-testing/7.1-jest-setup.html">
+            
+                    
+                    Jest setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../7-testing/7.2-snapshots.html">
+            
+                <a href="../7-testing/7.2-snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../7-testing/7.3-enzyme-testing.html">
+            
+                <a href="../7-testing/7.3-enzyme-testing.html">
+            
+                    
+                    Testing stateful components using Enzyme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../7-testing/7.4-mocking-rn-modules.html">
+            
+                <a href="../7-testing/7.4-mocking-rn-modules.html">
+            
+                    
+                    Mocking RN modules  
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../8-styling/8.0-intro.html">
+            
+                <a href="../8-styling/8.0-intro.html">
+            
+                    
+                    Styling 💅🏻
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../8-styling/8.1-theme-variables.html">
+            
+                <a href="../8-styling/8.1-theme-variables.html">
+            
+                    
+                    Theme Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../8-styling/8.2-common-styles-mixins.html">
+            
+                <a href="../8-styling/8.2-common-styles-mixins.html">
+            
+                    
+                    Common Styles/Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../8-styling/8.3-separating-styles-from-component.html">
+            
+                <a href="../8-styling/8.3-separating-styles-from-component.html">
+            
+                    
+                    Separating styles from component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../9-redux/9.0-intro.html">
+            
+                <a href="../9-redux/9.0-intro.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../9-redux/9.1-redux-setup.html">
+            
+                <a href="../9-redux/9.1-redux-setup.html">
+            
+                    
+                    Redux setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../9-redux/9.2-presentational-vs-containers.html">
+            
+                <a href="../9-redux/9.2-presentational-vs-containers.html">
+            
+                    
+                    Presentational VS Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../10-navigation/10.0-intro.html">
+            
+                <a href="../10-navigation/10.0-intro.html">
+            
+                    
+                    Navigation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../10-navigation/10.1-using-react-navigation.html">
+            
+                <a href="../10-navigation/10.1-using-react-navigation.html">
+            
+                    
+                    Using React-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                <a href="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                    
+                    Integrating with redux store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                <a href="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                    
+                    File Structure for routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../11-devops/11.0-devops.html">
+            
+                <a href="../11-devops/11.0-devops.html">
+            
+                    
+                    DevOps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../11-devops/11.1-android-build-setup.html">
+            
+                <a href="../11-devops/11.1-android-build-setup.html">
+            
+                    
+                    Android Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../11-devops/11.2-ios-build-setup.html">
+            
+                <a href="../11-devops/11.2-ios-build-setup.html">
+            
+                    
+                    iOS Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../11-devops/11.3-ci-setup.md">
+            
+                <span>
+            
+                    
+                    CI setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../11-devops/11.4-test-fairy-setup.md">
+            
+                <span>
+            
+                    
+                    Test Fairy setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                    
+                    SVG Icons using react-native-vector-icons
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                    
+                    Custom Icon set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../13-internationalization/13.1-framework-intro.html">
+            
+                <a href="../13-internationalization/13.1-framework-intro.html">
+            
+                    
+                    Internationalization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../13-internationalization/13.2-language-toggle.html">
+            
+                <a href="../13-internationalization/13.2-language-toggle.html">
+            
+                    
+                    Adding language toggle feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                <a href="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                    
+                    Integration with react-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="../15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md">
+            
+                <span>
+            
+                    
+                    When should I search for pre-built components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="../15-third-party-components/15.2-linking-components.md">
+            
+                <span>
+            
+                    
+                    Linking components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.5" data-path="../15-third-party-components/15.3-recommended-components.md">
+            
+                <span>
+            
+                    
+                    Recommended components
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../16-custom-native-modules/16.0-intro.html">
+            
+                <a href="../16-custom-native-modules/16.0-intro.html">
+            
+                    
+                    Custom Native Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                    
+                    Android Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                    
+                    iOS Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Creating basic components and writing platform specific code</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="creating-basic-components">Creating basic components</h1>
+<p>Since we have a rough idea of what goes where from the previous page, lets create our first basic UI component
+We will create a simple text area where we can enter our note text.
+React Native already bundles many basic UI components such as Text, View, TextInput, etc into the package <strong><code>react-native</code></strong>.</p>
+<p>Below is a table comparing the basic react-native components and their web counterparts:</p>
+<h3 id="textarea-component">TextArea component</h3>
+<p>Create two files</p>
+<ul>
+<li><strong>TextArea UI component</strong> - <code>app/components/TextArea/TextArea.component.js</code></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;prop-types&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TextArea.component.style&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    text : <span class="hljs-string">&apos;&apos;</span>
+  }
+  render() {
+    <span class="hljs-keyword">const</span> {...extraProps} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextInput</span>
+        {<span class="hljs-attr">...extraProps</span>}
+        <span class="hljs-attr">style</span>=<span class="hljs-string">{[styles.textArea,</span> <span class="hljs-attr">extraProps.style</span>]}
+        <span class="hljs-attr">multiline</span> = {<span class="hljs-attr">true</span>}
+        <span class="hljs-attr">onChangeText</span>=<span class="hljs-string">{(text)</span> =&gt;</span> this.setState({text})}
+        value={this.state.text}
+      /&gt;
+    );
+  }
+}
+
+export default TextArea;
+</span></code></pre>
+<ul>
+<li><strong>TextArea style file</strong> - <code>app/components/TextArea/TextArea.component.style.js</code></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {StyleSheet} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StyleSheet.create({
+  textArea: {
+    width: <span class="hljs-number">200</span>,
+    height:<span class="hljs-number">100</span>,
+    borderColor: <span class="hljs-string">&apos;gray&apos;</span>,
+    borderWidth: <span class="hljs-number">1</span>
+  }
+});
+</code></pre>
+<p>This will be our TextArea UI component that we will use to enter our text.</p>
+<p>Also lets add our UI screen which will contain the TextArea component.</p>
+<ul>
+<li><strong>Home screen component</strong> - <code>app/components/Home/Home.component.js</code></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, View ,Text} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;prop-types&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Home.component.style&apos;</span>;
+<span class="hljs-keyword">import</span> TextArea <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../TextArea/TextArea.component&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Home</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">View</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{styles.container}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span> Please enter your note here<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">TextArea</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">View</span>&gt;</span>
+    );
+  }
+}
+
+export default Home;
+</span></code></pre>
+<ul>
+<li><strong>Home screen style file</strong> - <code>app/components/Home/Home.component.style.js</code></li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {StyleSheet} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StyleSheet.create({
+  container: {
+    flex:<span class="hljs-number">1</span>,
+    padding: <span class="hljs-number">20</span>,
+    alignItems: <span class="hljs-string">&apos;center&apos;</span>
+  }
+});
+</code></pre>
+<p>And finally lets add the Home screen to the main app.</p>
+<p>Lets, modify the <code>app/index.js</code> to include our home screen.</p>
+<p><strong><code>app/index.js</code></strong></p>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */</span>
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home/Home.component&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NoteTaker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Home</span> /&gt;</span>
+    );
+  }
+}
+
+export default NoteTaker;
+</span></code></pre>
+<p>If you run the app now, you should have something that looks like this</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/5/5.2/5.2-part-1-ios.png" style="width: 40%;display:inline-block;" hspace="40">
+  <img src="../assets/images/5/5.2/5.2-part-1-android.png" style="width: 40%;display: inline-block;">
+</div>
+<br></p>
+<h3 id="platform-specific-code">Platform specific code</h3>
+<p>Now as we can see we have different outputs in Android and iOS.</p>
+<p>To solve this we create an extra file <code>TextArea.component.android.js</code> with the content</p>
+<pre><code class="lang-js">
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;prop-types&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TextArea.component.style&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    text : <span class="hljs-string">&apos;&apos;</span>
+  }
+  render() {
+    <span class="hljs-keyword">const</span> {...extraProps} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">const</span> alignTextTop = {textAlignVertical: <span class="hljs-string">&apos;top&apos;</span>};
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextInput</span>
+        {<span class="hljs-attr">...extraProps</span>}
+        <span class="hljs-attr">style</span>=<span class="hljs-string">{[styles.textArea,</span> <span class="hljs-attr">alignTextTop</span>, <span class="hljs-attr">extraProps.style</span>]}
+        <span class="hljs-attr">multiline</span> = {<span class="hljs-attr">true</span>}
+        <span class="hljs-attr">onChangeText</span>=<span class="hljs-string">{(text)</span> =&gt;</span> this.setState({text})}
+        value={this.state.text}
+        underlineColorAndroid={&apos;transparent&apos;}
+      /&gt;
+    );
+  }
+}
+
+export default TextArea;
+</span></code></pre>
+<p>And reload the app.</p>
+<p>You should see that both Android and iOS textAreas look the same now.</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/5/5.2/5.2-part-1-ios.png" style="width: 40%;display:inline-block;" hspace="40">
+  <img src="../assets/images/5/5.2/5.2-part-2-android.png" style="width: 40%;display: inline-block;">
+</div>
+<br></p>
+<p>Basically, under the hood while importing/requiring a file say <code>TextArea.component</code> using the syntax</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> TextArea <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TextArea.component&apos;</span>
+or
+<span class="hljs-keyword">var</span> TextArea = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./TextArea.component&apos;</span>)
+</code></pre>
+<p>In case of android react native packager while bundling the js files looks for the files in the following order</p>
+<p><code>TextArea.component.android.js</code>, <code>TextArea.component.js</code></p>
+<p>Similarly, the order in case of iOS is</p>
+<p><code>TextArea.component.ios.js</code> , <code>TextArea.component.js</code></p>
+<blockquote>
+<p>Note: Platform specific code can also be written by making use of Platform module from react-native.</p>
+</blockquote>
+<p>For example we can also modify <code>TextArea.component.js</code> into</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { TextInput, View } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;prop-types&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TextArea.component.style&apos;</span>;
+<span class="hljs-keyword">import</span> {Platform} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    text : <span class="hljs-string">&apos;&apos;</span>
+  }
+  render() {
+    <span class="hljs-keyword">const</span> {...extraProps} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">const</span> alignTextTop = Platform.OS ===<span class="hljs-string">&apos;android&apos;</span> ? {textAlignVertical: <span class="hljs-string">&apos;top&apos;</span>}: {};
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextInput</span>
+        {<span class="hljs-attr">...extraProps</span>}
+        <span class="hljs-attr">style</span>=<span class="hljs-string">{[styles.textArea,</span> <span class="hljs-attr">alignTextTop</span>, <span class="hljs-attr">extraProps.style</span>]}
+        <span class="hljs-attr">multiline</span> = {<span class="hljs-attr">true</span>}
+        <span class="hljs-attr">onChangeText</span>=<span class="hljs-string">{(text)</span> =&gt;</span> this.setState({text})}
+        value={this.state.text}
+        underlineColorAndroid={&apos;transparent&apos;}
+      /&gt;
+    );
+  }
+}
+
+export default TextArea;
+</span></code></pre>
+<p>Notice that here only single <code>TextArea.component.js</code> file is present for both Android and iOS.
+This will also produce similar result.</p>
+<p><strong>But</strong> we prefer to use the first method where we create seperate files with <code>.android.js</code> and <code>.ios.js</code> extension.</p>
+<ol>
+<li><p>In the case of different extensions we have different files, hence only the code needed for running our logic is bundled into the application. For example: Lets assume you decide that you will use a custom library for TextArea only for android.
+Now if we import that library only into <code>TextArea.android.js</code>, only for android bundling a new library will be added, iOS will remain the same. Hence, it reduces our code size when bundling.</p>
+</li>
+<li><p>In practice, we have noticed that <code>Platform</code> module method is error prone as we have to manually check for Platform.OS wherever there are subtle differences in the output.</p>
+</li>
+</ol>
+<p><a href="https://snack.expo.io/@master-atul/snack_5_2_basic_components" target="_blank"><img src="https://raw.githubusercontent.com/master-atul/gitbook-plugin-expo-snack/master/assets/external-link-square.png" style="position:relative;width:15px;margin-bottom:-52px;left:100%;margin-left:-100px;"></a><div data-snack-id="@master-atul/snack_5_2_basic_components" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212733;border:1px solid rgba(0,0,0,.16);border-radius:4px;height:505px;width:100%"></div><script async src="https://snack.expo.io/embed.js"></script></p>
+<p>The code till here can be found on the <strong>branch</strong> <a href="https://github.com/master-atul/react-native-plus-plus-code/tree/chapter/5/5.2" target="_blank">chapter/5/5.2</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.1-customising-the-structure.html" class="navigation navigation-prev " aria-label="Previous page: Customizing the project structure">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../6-conventions-and-code-style/6.0-intro.html" class="navigation navigation-next " aria-label="Next page: Coventions and Code Style">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Creating basic components and writing platform specific code","level":"2.1.2","depth":2,"next":{"title":"Coventions and Code Style","level":"2.2","depth":1,"path":"6-conventions-and-code-style/6.0-intro.md","ref":"6-conventions-and-code-style/6.0-intro.md","articles":[{"title":"Eslint : The guardian of code conventions ⚔️","level":"2.2.1","depth":2,"path":"6-conventions-and-code-style/6.1-eslint.md","ref":"6-conventions-and-code-style/6.1-eslint.md","articles":[]},{"title":"Github Pre-push/Pre-commit Hooks","level":"2.2.2","depth":2,"path":"6-conventions-and-code-style/6.2-git-pre-hooks.md","ref":"6-conventions-and-code-style/6.2-git-pre-hooks.md","articles":[]},{"title":"Environment Variables","level":"2.2.3","depth":2,"path":"6-conventions-and-code-style/6.3-environment-variables.md","ref":"6-conventions-and-code-style/6.3-environment-variables.md","articles":[]},{"title":"Speed up development with some and ES7 features 🤘","level":"2.2.4","depth":2,"path":"6-conventions-and-code-style/6.4-es7-features.md","ref":"6-conventions-and-code-style/6.4-es7-features.md","articles":[]}]},"previous":{"title":"Customizing the project structure","level":"2.1.1","depth":2,"path":"5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md","ref":"5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","disqus","expo-snack","ga"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"rnMadeEasy"},"ga":{"configuration":"auto","token":"UA-XXXX-Y"},"search-plus":{},"expo-snack":{"myConfigKey":"it's the default value"},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.md","mtime":"2017-12-09T14:56:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-09T15:03:09.280Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
