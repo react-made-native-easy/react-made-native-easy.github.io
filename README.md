@@ -9,7 +9,7 @@
   {% GitHubContributors %}
   {% endGitHubContributors %}
 </center>
-### You will learn:
+### You will learn
 
 * How react native internally works and how to debug RN apps.
 * How to test and write modular code in react-native.
@@ -21,7 +21,7 @@ We are following native-first approach with an eye on web. You will eventually s
 
 The knowledge is based on the experience of working with React Native apps for around 2 years and helping clients launch their apps quicker than ever before.
 
-### This book is for:
+### This book is for
 
 - React developers who are planning to start with react-native applications.
 - Web Developers who know basic ReactJS fundamentals and planning to learn best practices for state management and learn native development.
