@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus",
+    "disqus",
+    "expo-snack",
+    "ga",
+    "edit-link",
+    "back-to-top-button",
+    "githubcontributors"
+  ],
+  "pdf": {
+    "paperSize": "a4"
+  },
+  "pluginsConfig": {
+    "disqus": {
+      "shortName": "rnMadeEasy"
+    },
+    "githubcontributors": {
+      "githubOwner": "master-atul",
+      "githubRepository": "AndroidManager"
+    },
+    "edit-link": {
+      "base": "https://github.com/master-atul/react-native-plus-plus/blob/master",
+      "label": "Edit This Page"
+    },
+    "ga": {
+      "token": "UA-XXXX-Y"
+    }
+  }
+}
