@@ -43,10 +43,10 @@ Start building the app 😎
   * [Adding language toggle feature](13-internationalization/13.2-language-toggle.md)
   * [Integration with react-navigation](13-internationalization/13.3-integration-with-react-navigation.md)
 <!-- * [Axios and API mocks](14-axios-and-api-mocks/14-intro.md) -->
-<!-- * [Third Party components](15-third-party-components/15.0-intro.md)
-  * [When should I search for pre-built components](15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md)
-  * [Linking components](15-third-party-components/15.2-linking-components.md)
-  * [Recommended components](15-third-party-components/15.3-recommended-components.md) -->
+<!-- * [Third Party components](15-third-party-components/15.0-intro.md) -->
+  <!-- * [When should I search for pre-built components](15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md) -->
+  <!-- * [Linking components](15-third-party-components/15.2-linking-components.md) -->
+  <!-- * [Recommended components](15-third-party-components/15.3-recommended-components.md) -->
 * [Custom Native Modules 🍮](16-custom-native-modules/16.0-intro.md)
   * [Android Native Modules](16-custom-native-modules/16.1-android-native-module.md)
   * [iOS Native Modules](16-custom-native-modules/16.2-ios-native-module.md)
