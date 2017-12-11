@@ -7,7 +7,8 @@
     "expo-snack",
     "ga",
     "edit-link",
-    "back-to-top-button"
+    "back-to-top-button",
+    "githubcontributors"
   ],
   "pdf": {
     "paperSize": "a4"
@@ -15,6 +16,10 @@
   "pluginsConfig": {
     "disqus": {
       "shortName": "rnMadeEasy"
+    },
+    "githubcontributors": {
+      "githubOwner": "master-atul",
+      "githubRepository": "react-native-plus-plus"
     },
     "edit-link": {
       "base": "https://github.com/master-atul/react-native-plus-plus/blob/master",
