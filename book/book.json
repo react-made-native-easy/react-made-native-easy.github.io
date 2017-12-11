@@ -5,7 +5,8 @@
     "search-plus",
     "disqus",
     "expo-snack",
-    "ga"
+    "ga",
+    "edit-link"
   ],
   "pdf": {
     "paperSize": "a4"
@@ -13,6 +14,10 @@
   "pluginsConfig": {
     "disqus": {
       "shortName": "rnMadeEasy"
+    },
+    "edit-link": {
+      "base": "https://github.com/master-atul/react-native-plus-plus",
+      "label": "Edit This Page"
     },
     "ga": {
       "token": "UA-XXXX-Y"
