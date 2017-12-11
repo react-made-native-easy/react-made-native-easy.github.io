@@ -5,9 +5,10 @@
 
 >A reference for building production grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with react and ES6 and want to build complex native apps.
 
-{% GitHubContributors %}
-{% endGitHubContributors %}
-
+<center>
+  {% GitHubContributors %}
+  {% endGitHubContributors %}
+</center>
 ### You will learn:
 
 * How react native internally works and how to debug RN apps.
