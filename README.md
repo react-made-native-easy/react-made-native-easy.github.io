@@ -1,8 +1,11 @@
 # <center>React Native made easy<center/>
+<center>Written by [Rahul Gaba](http://rahulgaba.com) and [Atul R](http://atulr.com)<center/>
 
-#### <center>React/Redux best practices + React Native + Robust DevOps pipeline<br/>↘️ ⬇️ ↙️<br/>A fine native app for iOS, Android \(and Web\).<center>
+#### <center>React/Redux best practices + React Native + Robust DevOps pipeline<br/>↘️ ⬇️ ↙️<br/>A fine native app for iOS, Android (and Web).<center>
 
 >A reference for building production grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with react and ES6 and want to build complex native apps.
+
+
 
 ### You will learn:
 

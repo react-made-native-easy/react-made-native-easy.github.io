@@ -6,7 +6,8 @@
     "disqus",
     "expo-snack",
     "ga",
-    "edit-link"
+    "edit-link",
+    "back-to-top-button"
   ],
   "pdf": {
     "paperSize": "a4"
@@ -16,7 +17,7 @@
       "shortName": "rnMadeEasy"
     },
     "edit-link": {
-      "base": "https://github.com/master-atul/react-native-plus-plus",
+      "base": "https://github.com/master-atul/react-native-plus-plus/blob/master",
       "label": "Edit This Page"
     },
     "ga": {
