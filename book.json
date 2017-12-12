@@ -19,14 +19,14 @@
     },
     "githubcontributors": {
       "githubOwner": "react-made-native-easy",
-      "githubRepository": "react-made-native-easy.github.io"
+      "githubRepository": "book"
     },
     "edit-link": {
       "base": "https://github.com/react-made-native-easy/book",
       "label": "Edit"
     },
     "ga": {
-      "token": "UA-XXXX-Y"
+      "token": "UA-111146084-1"
     }
   }
 }
