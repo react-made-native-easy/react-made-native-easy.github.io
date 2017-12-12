@@ -1,0 +1,1213 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redux setup · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="9.2-presentational-vs-containers.html" />
+    
+    
+    <link rel="prev" href="9.0-intro.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction 🎉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                <a href="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                    
+                    React Native Internals 📡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                <a href="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                    
+                    Setting up the project 🌈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Start building the app 😎</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../5-project-structure-and-start-building-some-app/5.0-intro.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.0-intro.html">
+            
+                    
+                    Project Structure 🏢
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../5-project-structure-and-start-building-some-app/5.1-customising-the-structure.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.1-customising-the-structure.html">
+            
+                    
+                    Customizing the project structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.html">
+            
+                    
+                    Creating basic components and writing platform specific code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../6-conventions-and-code-style/6.0-intro.html">
+            
+                <a href="../6-conventions-and-code-style/6.0-intro.html">
+            
+                    
+                    Coventions and Code Style 🎓
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../6-conventions-and-code-style/6.1-eslint.html">
+            
+                <a href="../6-conventions-and-code-style/6.1-eslint.html">
+            
+                    
+                    ESLint : The guardian of code conventions ⚔️
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../6-conventions-and-code-style/6.2-git-pre-hooks.html">
+            
+                <a href="../6-conventions-and-code-style/6.2-git-pre-hooks.html">
+            
+                    
+                    Github Pre-push/Pre-commit Hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../6-conventions-and-code-style/6.3-environment-variables.html">
+            
+                <a href="../6-conventions-and-code-style/6.3-environment-variables.html">
+            
+                    
+                    Environment Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../6-conventions-and-code-style/6.4-es7-features.html">
+            
+                <a href="../6-conventions-and-code-style/6.4-es7-features.html">
+            
+                    
+                    Speed up development with some and ES7 features 🤘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../7-testing/7.0-intro.html">
+            
+                <a href="../7-testing/7.0-intro.html">
+            
+                    
+                    Testing and Debugging 🚫🐞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../7-testing/7.1-jest-setup.html">
+            
+                <a href="../7-testing/7.1-jest-setup.html">
+            
+                    
+                    Jest setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../7-testing/7.2-snapshots.html">
+            
+                <a href="../7-testing/7.2-snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../7-testing/7.3-enzyme-testing.html">
+            
+                <a href="../7-testing/7.3-enzyme-testing.html">
+            
+                    
+                    Testing stateful components using Enzyme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../7-testing/7.4-mocking-rn-modules.html">
+            
+                <a href="../7-testing/7.4-mocking-rn-modules.html">
+            
+                    
+                    Mocking RN modules  
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../8-styling/8.0-intro.html">
+            
+                <a href="../8-styling/8.0-intro.html">
+            
+                    
+                    Styling 💅🏻
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../8-styling/8.1-theme-variables.html">
+            
+                <a href="../8-styling/8.1-theme-variables.html">
+            
+                    
+                    Theme Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../8-styling/8.2-common-styles-mixins.html">
+            
+                <a href="../8-styling/8.2-common-styles-mixins.html">
+            
+                    
+                    Common Styles/Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../8-styling/8.3-separating-styles-from-component.html">
+            
+                <a href="../8-styling/8.3-separating-styles-from-component.html">
+            
+                    
+                    Separating styles from component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="9.0-intro.html">
+            
+                <a href="9.0-intro.html">
+            
+                    
+                    Redux 🗄
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.5.1" data-path="9.1-redux-setup.html">
+            
+                <a href="9.1-redux-setup.html">
+            
+                    
+                    Redux setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="9.2-presentational-vs-containers.html">
+            
+                <a href="9.2-presentational-vs-containers.html">
+            
+                    
+                    Presentational VS Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../10-navigation/10.0-intro.html">
+            
+                <a href="../10-navigation/10.0-intro.html">
+            
+                    
+                    Navigation 🚪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../10-navigation/10.1-using-react-navigation.html">
+            
+                <a href="../10-navigation/10.1-using-react-navigation.html">
+            
+                    
+                    Using React-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                <a href="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                    
+                    Integrating with redux store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                <a href="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                    
+                    File Structure for routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../11-devops/11.0-devops.html">
+            
+                <a href="../11-devops/11.0-devops.html">
+            
+                    
+                    DevOps ⚙️
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../11-devops/11.1-android-build-setup.html">
+            
+                <a href="../11-devops/11.1-android-build-setup.html">
+            
+                    
+                    Android Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../11-devops/11.2-ios-build-setup.html">
+            
+                <a href="../11-devops/11.2-ios-build-setup.html">
+            
+                    
+                    iOS Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../11-devops/11.3-ci-setup.md">
+            
+                <span>
+            
+                    
+                    CI setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../11-devops/11.4-test-fairy-setup.md">
+            
+                <span>
+            
+                    
+                    Test Fairy setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                    
+                    SVG Icons using react-native-vector-icons 🐾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                    
+                    Custom Icon set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../13-internationalization/13.1-framework-intro.html">
+            
+                <a href="../13-internationalization/13.1-framework-intro.html">
+            
+                    
+                    Internationalization 🇮🇳🇺🇸🇷🇺
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../13-internationalization/13.2-language-toggle.html">
+            
+                <a href="../13-internationalization/13.2-language-toggle.html">
+            
+                    
+                    Adding language toggle feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                <a href="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                    
+                    Integration with react-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../16-custom-native-modules/16.0-intro.html">
+            
+                <a href="../16-custom-native-modules/16.0-intro.html">
+            
+                    
+                    Custom Native Modules 🍮
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                    
+                    Android Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                    
+                    iOS Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../17-migrating-to-web/17.1-interface-file.md">
+            
+                <span>
+            
+                    
+                    Interface File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../17-migrating-to-web/17.2-rewrite-all-dumb-components.md">
+            
+                <span>
+            
+                    
+                    Rewrite all Dumb components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md">
+            
+                <span>
+            
+                    
+                    Reusing business logic across platforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../references.html">
+            
+                <a href="../references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../the-end.html">
+            
+                <a href="../the-end.html">
+            
+                    
+                    The End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Redux setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="setting-up-redux-for-react-native">Setting up Redux for React Native</h1>
+<h3 id="why-redux-">Why redux ?</h3>
+<p>Lets say in our note taker app. We need to add the character count and a save/sync button at bottom.
+First lets create the UI component for it.</p>
+<p>Modify the files</p>
+<blockquote>
+<p>app/components/Home/Home.component.js</p>
+</blockquote>
+<pre><code class="lang-js">...
+...
+...
+           onChangeText={this.setTitle} value={this.state.title} /&gt;
+         &lt;Text style={styles.textAreaTitle}&gt; Please type your note below &lt;/Text&gt;
+         &lt;TextArea style={styles.textArea}/&gt;
+         &lt;View style={styles.bottomBar}&gt;
+           &lt;View style={styles.bottomBarWrapper}&gt;
+             &lt;Text style={styles.saveBtn}&gt;Save&lt;/Text&gt;
+             &lt;Text style={styles.characterCount}&gt;{20} characters&lt;/Text&gt;
+           &lt;/View&gt;
+         &lt;/View&gt;
+       &lt;/View&gt;
+     );
+   }
+</code></pre>
+<blockquote>
+<p>app/components/Home/Home.component.style.js</p>
+</blockquote>
+<pre><code class="lang-js"> <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StyleSheet.create({
+   container: {
+     flex: <span class="hljs-number">1</span>,
+     paddingTop: theme.CONTAINER_PADDING,
+     flexDirection: <span class="hljs-string">&apos;column&apos;</span>,
+     justifyContent: <span class="hljs-string">&apos;space-between&apos;</span>
+   },
+   ...
+   ...
+   ...
+   ...
+   textArea: {
+     ...textInput,
+     flex: <span class="hljs-number">1</span>
+   },
+   bottomBar: {
+     flexDirection: <span class="hljs-string">&apos;row&apos;</span>,
+     alignItems: <span class="hljs-string">&apos;center&apos;</span>
+   },
+   bottomBarWrapper: {
+     flexDirection: <span class="hljs-string">&apos;row&apos;</span>,
+     justifyContent: <span class="hljs-string">&apos;space-between&apos;</span>,
+     flex: <span class="hljs-number">1</span>
+   },
+   saveBtn: {
+     padding: <span class="hljs-number">10</span>,
+     fontWeight: theme.FONT_WEIGHT_BOLD
+   },
+   characterCount: {
+     padding: <span class="hljs-number">10</span>,
+     fontSize: theme.FONT_SIZE_SMALL
+   }
+ });
+</code></pre>
+<blockquote>
+<p>app/styles/theme.style.js</p>
+</blockquote>
+<pre><code class="lang-js">   ...
+   ...
+   BACKGROUND_COLOR_LIGHT: <span class="hljs-string">&apos;#ebe9e9&apos;</span>,
+   ...
+   ...
+ };
+</code></pre>
+<p>Now our app should have a bottom bar with character count and a save button.
+Currently we have hard coded the character count to 20.</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/9/9.1/9.1-bottom-bar.png" style="width: 40%;display:inline-block;" hspace="40">
+</div>
+<br></p>
+<p>But if you look at the app now, there is no way for us to get the character count from the TextArea component and use it as the text for character count text view.
+To do this we will need to <strong>move the state present inside the TextArea component and place it in the Home component</strong>.
+This is because all the components that need access to a state have to be the child of the component holding the state.</p>
+<p>So we modify our components as follows:</p>
+<blockquote>
+<p>app/components/TextArea/TextArea.component.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {TextInput} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> PropTypes <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;prop-types&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./TextArea.component.style&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TextArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  <span class="hljs-keyword">static</span> propTypes = {
+    text: PropTypes.string,
+    onTextChange: PropTypes.func
+  }
+  render () {
+    <span class="hljs-keyword">const</span> {text, onTextChange, ...extraProps} = <span class="hljs-keyword">this</span>.props;
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TextInput</span>
+        {<span class="hljs-attr">...extraProps</span>}
+        <span class="hljs-attr">style</span>=<span class="hljs-string">{[styles.textArea,</span> <span class="hljs-attr">extraProps.style</span>]}
+        <span class="hljs-attr">multiline</span> = {<span class="hljs-attr">true</span>}
+        <span class="hljs-attr">onChangeText</span>=<span class="hljs-string">{onTextChange}</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{text}</span>
+      /&gt;</span>
+    );
+  }
+}
+export default TextArea;
+</span></code></pre>
+<blockquote>
+<p>app/components/Home/Home.component.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {View, Text, TextInput} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Home.component.style&apos;</span>;
+<span class="hljs-keyword">import</span> TextArea <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../TextArea/TextArea.component&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Home</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  state = {
+    title: <span class="hljs-string">&apos;&apos;</span>,
+    text: <span class="hljs-string">&apos;&apos;</span>
+  }
+  setTitle = (title) =&gt; <span class="hljs-keyword">this</span>.setState({title})
+  setText = (text) =&gt; <span class="hljs-keyword">this</span>.setState({text});
+  render () {
+    <span class="hljs-keyword">return</span> (
+      &lt;View style={styles.container}&gt;
+        &lt;Text style={styles.titleHeading}&gt; Note Title&lt;/Text&gt;
+        &lt;TextInput style={styles.titleTextInput}
+            onChangeText={this.setTitle} value={this.state.title} /&gt;
+        &lt;Text style={styles.textAreaTitle}&gt; Please type your note below &lt;/Text&gt;
+        &lt;TextArea text={this.state.text} onTextChange={this.setText} style={styles.textArea}/&gt;
+        &lt;View style={styles.bottomBar}&gt;
+          &lt;View style={styles.bottomBarWrapper}&gt;
+            &lt;Text style={styles.saveBtn}&gt;Save&lt;/Text&gt;
+            &lt;Text style={styles.characterCount}&gt;{this.state.text.length} characters&lt;/Text&gt;
+          &lt;/View&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+export default Home;
+</code></pre>
+<p>The character count should now update whenever you enter text on the text field.</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/9/9.1/9.1-bottom-bar-works.png" style="width: 50%;display:inline-block;" hspace="40">
+</div>
+<br></p>
+<p>Hence, here by moving the state from the child component to parent, we were able to access it in multiple child components.
+Thus, to provide access to the data that needs to be accessed by multiple components, we need to have the state in the enclosing parent component. Thus following this principle, if we keep on moving the state to the parent component, we will end up with a state present in the top most level component.</p>
+<p>Redux builds on top of similar principles. It keeps a global store to which the components which need access to the data can subscribe to. Additionally, it provides a mechanism by which these components can re-render whenever the data in the store changes.</p>
+<p>Now, since we are clear why redux is helpful. Lets setup redux for our app.</p>
+<h3 id="setup">Setup</h3>
+<p>Lets begin by installing few packages.</p>
+<p><code>yarn add redux react-redux redux-promise redux-thunk</code></p>
+<p>  or</p>
+<p><code>npm install --save redux react-redux</code></p>
+<ul>
+<li><strong>redux</strong> - the main redux library.</li>
+<li><strong>react-redux</strong> - the react bindings for redux, which makes our life easy when using redux with react.</li>
+</ul>
+<p>Additionally, you can also install your preferred redux middleware like <code>redux-thunk</code>, etc. The comments on the code specify how to do that.</p>
+<p>Now create the files</p>
+<blockquote>
+<p>app/redux/store.js</p>
+</blockquote>
+<pre><code class="lang-js">
+<span class="hljs-keyword">import</span> {createStore, compose<span class="hljs-comment">/* , applyMiddleware*/</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-comment">// import someReduxMiddleware from &apos;some-redux-middleware&apos;;</span>
+<span class="hljs-comment">// import someOtherReduxMiddleware from &apos;some-other-redux-middleware&apos;;</span>
+<span class="hljs-keyword">import</span> rootReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/root.reducer&apos;</span>;
+
+<span class="hljs-keyword">const</span> enhancerList = [];
+<span class="hljs-keyword">const</span> devToolsExtension = <span class="hljs-built_in">window</span> &amp;&amp; <span class="hljs-built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION__;
+
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> devToolsExtension === <span class="hljs-string">&apos;function&apos;</span>) {
+  enhancerList.push(devToolsExtension());
+}
+
+<span class="hljs-keyword">const</span> composedEnhancer = compose(<span class="hljs-comment">/* applyMiddleware(someReduxMiddleware, someOtherReduxMiddleware),*/</span> ...enhancerList);
+
+<span class="hljs-keyword">const</span> initStore = () =&gt; createStore(rootReducer, {}, composedEnhancer);
+
+<span class="hljs-built_in">module</span>.exports = {
+  initStore
+};
+</code></pre>
+<blockquote>
+<p>app/redux/reducers/root.reducer.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> combineReducers({
+
+});
+</code></pre>
+<p>Now, lets add our first reducer and action.</p>
+<p>Create the files:</p>
+<blockquote>
+<p>app/redux/actions/index.actions.js</p>
+</blockquote>
+<p>This file will contain all our actions.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> TEST_ACTION = <span class="hljs-string">&apos;TEST_ACTION&apos;</span>;
+</code></pre>
+<blockquote>
+<p>app/redux/reducers/test.reducer.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {TEST_ACTION} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../actions/index.actions&apos;</span>;
+
+<span class="hljs-keyword">const</span> test = (state = {}, action) =&gt; {
+  <span class="hljs-keyword">switch</span> (action.type) {
+  <span class="hljs-keyword">case</span> TEST_ACTION: {
+    <span class="hljs-keyword">return</span> action.payload;
+  }
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-keyword">return</span> state;
+  }
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> test;
+</code></pre>
+<p>Now lets add our test reducer to the root reducer.</p>
+<p>Modify</p>
+<blockquote>
+<p>app/redux/reducers/root.reducer.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> {combineReducers} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./test.reducer&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> combineReducers({
+  test
+});
+</code></pre>
+<p>Now lets initialize the store.</p>
+<p>Modify the file:</p>
+<blockquote>
+<p>app/index.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> {initStore} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./redux/store&apos;</span>;
+<span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App.container&apos;</span>;
+
+<span class="hljs-keyword">const</span> store = initStore();
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NoteTaker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render () {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>
+    );
+  }
+}
+
+export default NoteTaker;
+</span></code></pre>
+<p>and move the Initialization of the home component to another file</p>
+<blockquote>
+<p>app/App.container.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Home/Home.component&apos;</span>;
+<span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render () {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.props.state); <span class="hljs-comment">// eslint-disable-line</span>
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Home</span> /&gt;</span>
+    );
+  }
+}
+
+const mapStateToProps = (state) =&gt; ({
+  state
+});
+
+const mapDispatchToProps = (dispatch) =&gt; ({
+  dispatch
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+</span></code></pre>
+<p>At this point, we should a have a redux store with an initial test state from the test reducer.</p>
+<p>To check this, lets run our app on the simulator.</p>
+<p>Now open up the debug menu on the iOS simulator by pressing <code>cmd+ctrl+z</code> or on Android emulator by using <code>cmd+m</code>.</p>
+<p>Choose <code>Debug JS Remotely</code>.</p>
+<p>This should run the app js code in react-native-debugger and if all went well we should see something like this on the console panel:</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/9/9.1/9.1-redux-setup-complete.png" style="width: 80%;display:inline-block;" hspace="20">
+</div>
+<br></p>
+<p>This implies that our redux store successfully initialized with the test reducer.</p>
+<p><strong>NOTE:</strong> If your tests fail due to the error <code>window not defined</code>, then add a mock file</p>
+<blockquote>
+<p>__mocks__/react-native.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> rn = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;react-native&apos;</span>);
+global.window = global;
+<span class="hljs-built_in">module</span>.exports = rn;
+</code></pre>
+</blockquote>
+<p>This will initialize a dummy window variable when tests are run in node environment.</p>
+<p><a href="https://snack.expo.io/@master-atul/snack_9_1_redux_intro" target="_blank"><img src="https://raw.githubusercontent.com/master-atul/gitbook-plugin-expo-snack/master/assets/external-link-square.png" style="position:relative;width:15px;margin-bottom:-52px;left:100%;margin-left:-100px;"></a><div data-snack-id="@master-atul/snack_9_1_redux_intro" data-snack-platform="ios" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212733;border:1px solid rgba(0,0,0,.16);border-radius:4px;height:600px;width:100%"></div><script async src="https://snack.expo.io/embed.js"></script></p>
+<p>The code till here can be found on the <strong>branch</strong> <a href="https://github.com/master-atul/react-native-plus-plus-code/tree/chapter/9/9.1" target="_blank">chapter/9/9.1</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="9.0-intro.html" class="navigation navigation-prev " aria-label="Previous page: Redux 🗄">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="9.2-presentational-vs-containers.html" class="navigation navigation-next " aria-label="Next page: Presentational VS Containers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redux setup","level":"2.5.1","depth":2,"next":{"title":"Presentational VS Containers","level":"2.5.2","depth":2,"path":"9-redux/9.2-presentational-vs-containers.md","ref":"9-redux/9.2-presentational-vs-containers.md","articles":[]},"previous":{"title":"Redux 🗄","level":"2.5","depth":1,"path":"9-redux/9.0-intro.md","ref":"9-redux/9.0-intro.md","articles":[{"title":"Redux setup","level":"2.5.1","depth":2,"path":"9-redux/9.1-redux-setup.md","ref":"9-redux/9.1-redux-setup.md","articles":[]},{"title":"Presentational VS Containers","level":"2.5.2","depth":2,"path":"9-redux/9.2-presentational-vs-containers.md","ref":"9-redux/9.2-presentational-vs-containers.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","disqus","expo-snack","ga","edit-link","back-to-top-button","githubcontributors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"rnMadeEasy"},"fontsettings":{"theme":"white","family":"sans","size":2},"expo-snack":{"myConfigKey":"it's the default value"},"highlight":{},"back-to-top-button":{},"ga":{"configuration":"auto","token":"UA-XXXX-Y"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"master-atul","githubRepository":"AndroidManager"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/master-atul/react-native-plus-plus/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"9-redux/9.1-redux-setup.md","mtime":"2017-12-11T20:46:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-12T15:54:23.682Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

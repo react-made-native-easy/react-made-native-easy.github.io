@@ -1,0 +1,1037 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ESLint : The guardian of code conventions ⚔️ · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-githubcontributors/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.2-git-pre-hooks.html" />
+    
+    
+    <link rel="prev" href="6.0-intro.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction 🎉
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                <a href="../3-react-native-internals/3.1-react-native-internals.html">
+            
+                    
+                    React Native Internals 📡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                <a href="../4-setting-up-the-project/4.1-installing-react-native.html">
+            
+                    
+                    Setting up the project 🌈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Start building the app 😎</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../5-project-structure-and-start-building-some-app/5.0-intro.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.0-intro.html">
+            
+                    
+                    Project Structure 🏢
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../5-project-structure-and-start-building-some-app/5.1-customising-the-structure.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.1-customising-the-structure.html">
+            
+                    
+                    Customizing the project structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.html">
+            
+                <a href="../5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.html">
+            
+                    
+                    Creating basic components and writing platform specific code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="6.0-intro.html">
+            
+                <a href="6.0-intro.html">
+            
+                    
+                    Coventions and Code Style 🎓
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.2.1" data-path="6.1-eslint.html">
+            
+                <a href="6.1-eslint.html">
+            
+                    
+                    ESLint : The guardian of code conventions ⚔️
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="6.2-git-pre-hooks.html">
+            
+                <a href="6.2-git-pre-hooks.html">
+            
+                    
+                    Github Pre-push/Pre-commit Hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="6.3-environment-variables.html">
+            
+                <a href="6.3-environment-variables.html">
+            
+                    
+                    Environment Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="6.4-es7-features.html">
+            
+                <a href="6.4-es7-features.html">
+            
+                    
+                    Speed up development with some and ES7 features 🤘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../7-testing/7.0-intro.html">
+            
+                <a href="../7-testing/7.0-intro.html">
+            
+                    
+                    Testing and Debugging 🚫🐞
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../7-testing/7.1-jest-setup.html">
+            
+                <a href="../7-testing/7.1-jest-setup.html">
+            
+                    
+                    Jest setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../7-testing/7.2-snapshots.html">
+            
+                <a href="../7-testing/7.2-snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../7-testing/7.3-enzyme-testing.html">
+            
+                <a href="../7-testing/7.3-enzyme-testing.html">
+            
+                    
+                    Testing stateful components using Enzyme
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../7-testing/7.4-mocking-rn-modules.html">
+            
+                <a href="../7-testing/7.4-mocking-rn-modules.html">
+            
+                    
+                    Mocking RN modules  
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../8-styling/8.0-intro.html">
+            
+                <a href="../8-styling/8.0-intro.html">
+            
+                    
+                    Styling 💅🏻
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../8-styling/8.1-theme-variables.html">
+            
+                <a href="../8-styling/8.1-theme-variables.html">
+            
+                    
+                    Theme Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../8-styling/8.2-common-styles-mixins.html">
+            
+                <a href="../8-styling/8.2-common-styles-mixins.html">
+            
+                    
+                    Common Styles/Mixins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../8-styling/8.3-separating-styles-from-component.html">
+            
+                <a href="../8-styling/8.3-separating-styles-from-component.html">
+            
+                    
+                    Separating styles from component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../9-redux/9.0-intro.html">
+            
+                <a href="../9-redux/9.0-intro.html">
+            
+                    
+                    Redux 🗄
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../9-redux/9.1-redux-setup.html">
+            
+                <a href="../9-redux/9.1-redux-setup.html">
+            
+                    
+                    Redux setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../9-redux/9.2-presentational-vs-containers.html">
+            
+                <a href="../9-redux/9.2-presentational-vs-containers.html">
+            
+                    
+                    Presentational VS Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../10-navigation/10.0-intro.html">
+            
+                <a href="../10-navigation/10.0-intro.html">
+            
+                    
+                    Navigation 🚪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../10-navigation/10.1-using-react-navigation.html">
+            
+                <a href="../10-navigation/10.1-using-react-navigation.html">
+            
+                    
+                    Using React-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                <a href="../10-navigation/10.2-integrating-with-redux-store.html">
+            
+                    
+                    Integrating with redux store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                <a href="../10-navigation/10.3-file-structure-for-routes.html">
+            
+                    
+                    File Structure for routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../11-devops/11.0-devops.html">
+            
+                <a href="../11-devops/11.0-devops.html">
+            
+                    
+                    DevOps ⚙️
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../11-devops/11.1-android-build-setup.html">
+            
+                <a href="../11-devops/11.1-android-build-setup.html">
+            
+                    
+                    Android Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../11-devops/11.2-ios-build-setup.html">
+            
+                <a href="../11-devops/11.2-ios-build-setup.html">
+            
+                    
+                    iOS Build setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../11-devops/11.3-ci-setup.md">
+            
+                <span>
+            
+                    
+                    CI setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../11-devops/11.4-test-fairy-setup.md">
+            
+                <span>
+            
+                    
+                    Test Fairy setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.0-intro.html">
+            
+                    
+                    SVG Icons using react-native-vector-icons 🐾
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                <a href="../12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.html">
+            
+                    
+                    Custom Icon set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../13-internationalization/13.1-framework-intro.html">
+            
+                <a href="../13-internationalization/13.1-framework-intro.html">
+            
+                    
+                    Internationalization 🇮🇳🇺🇸🇷🇺
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../13-internationalization/13.2-language-toggle.html">
+            
+                <a href="../13-internationalization/13.2-language-toggle.html">
+            
+                    
+                    Adding language toggle feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                <a href="../13-internationalization/13.3-integration-with-react-navigation.html">
+            
+                    
+                    Integration with react-navigation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../16-custom-native-modules/16.0-intro.html">
+            
+                <a href="../16-custom-native-modules/16.0-intro.html">
+            
+                    
+                    Custom Native Modules 🍮
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.1-android-native-module.html">
+            
+                    
+                    Android Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                <a href="../16-custom-native-modules/16.2-ios-native-module.html">
+            
+                    
+                    iOS Native Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../17-migrating-to-web/17.1-interface-file.md">
+            
+                <span>
+            
+                    
+                    Interface File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../17-migrating-to-web/17.2-rewrite-all-dumb-components.md">
+            
+                <span>
+            
+                    
+                    Rewrite all Dumb components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md">
+            
+                <span>
+            
+                    
+                    Reusing business logic across platforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../references.html">
+            
+                <a href="../references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../the-end.html">
+            
+                <a href="../the-end.html">
+            
+                    
+                    The End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ESLint : The guardian of code conventions ⚔️</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="eslint-the-guardian-of-code-conventions-&#x2694;&#xFE0F;">Eslint: The guardian of code conventions &#x2694;&#xFE0F;</h1>
+<p><strong>Eslint</strong> is a tool that allows to maintain code quality and enforce code conventions. Eslint is a static code evaluator. Basically, it means that eslint will not actually run the code but will instead read through the source code to see if all the pre - configured code conventions are followed by the developers.</p>
+<blockquote>
+<p>Eslint allows to maintain consistent code style throughout the project. Thus, any developer of the team can easily understand the code written by another developer. This can exponentially increase the teams velocity and avoid dependencies. It can prevent human errors and can act as a guardian that maintains code conventions.</p>
+</blockquote>
+<h3 id="examples">Examples</h3>
+<p>Apart from code conventions , eslint also spots common mistakes  made by developers. For example,</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>, c = <span class="hljs-number">3</span>, e = <span class="hljs-number">4</span>;
+
+<span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-built_in">console</span>.log(a, b, c, d, e);
+};
+</code></pre>
+<p>The above code will compile fine. But as soon as u run it , it will throw a runtime exception<code>ReferenceError</code></p>
+<pre><code class="lang-js">test()
+
+VM206:<span class="hljs-number">4</span> Uncaught <span class="hljs-built_in">ReferenceError</span>: d is not defined
+    at test (&lt;anonymous&gt;:4:22)
+    at &lt;anonymous&gt;:1:1
+test @ VM206:4
+(anonymous) @ VM222:1
+</code></pre>
+<p>These mistakes can be easily detected by eslint.</p>
+<h3 id="installation">Installation</h3>
+<p>It is pretty easy to setup eslint for a project.</p>
+<pre><code>yarn add --dev eslint babel-eslint eslint eslint-plugin-react eslint-plugin-react-native
+</code></pre><p>This would install eslint and other useful plugins as your dev dependencies.</p>
+<p>And then in your <code>package.json</code> add a <code>npm script</code> as below.</p>
+<p>So now your <code>package.json</code> should have</p>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;testapp&quot;</span>,
+  <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.0.1&quot;</span>,
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;start&quot;</span>: <span class="hljs-string">&quot;node node_modules/react-native/local-cli/cli.js start&quot;</span>,
+    ....
+    ....
+    ....
+     <span class="hljs-string">&quot;lint&quot;</span>: <span class="hljs-string">&quot;eslint app/&quot;</span>,
+     <span class="hljs-string">&quot;lint:fix&quot;</span>: <span class="hljs-string">&quot;eslint app/ --fix&quot;</span>
+  },
+  <span class="hljs-string">&quot;dependencies&quot;</span>: {
+  ....
+  ....
+</code></pre>
+<p>Now you can simply run</p>
+<pre><code>npm run lint
+or
+npm run lint:fix
+</code></pre><p><code>npm run lint</code> will just run the eslint and show a list of errors that need to be fixed.<code>npm run lint:fix</code> will run eslint and attempt to correct the errors it is able to fix automatically.</p>
+<h2 id="icing-on-the-cake">Icing on the cake</h2>
+<p>Most modern editors have support for <strong>eslint </strong>via plugins.  The benefit of a text editor eslint plugin is that these plugins suggest correction while we write code itself thus saving a lot of time for the developer.</p>
+<p>A editor configured with eslint would look something like this.</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/6/6.1/eslint-error-editor.png" style="width: 100%;display:inline-block;vertical-align: middle;margin:0" hspace="40">
+</div>
+<br></p>
+<p>Also, some of these plugins also support features like <strong>lint on save.</strong>  Thus, eslint attempts to run<code>eslint --fix &lt;current_file&gt;</code> This fixes all auto fixable lint errors such as incorrect indentation spaces, etc the moment you  hit save <code>(cmd+s)</code> on a file.</p>
+<p><br></p>
+<p><div style="text-align:center">
+  <img src="../assets/images/6/6.1/eslint-atom.png" style="width: 40%;display:inline-block;vertical-align: middle;margin:0" hspace="40">
+  <img src="../assets/images/6/6.1/atom-eslint-config.png" style="width: 40%;display:inline-block;vertical-align: middle;margin:0" hspace="40">
+</div>
+<br></p>
+<p>We <strong>strongly</strong> recommend to enable this feature.</p>
+<h2 id="the-eslintrc-file">The <code>.eslintrc</code> file</h2>
+<p><strong>Eslint</strong> rules can be configured via a configuration file <code>.eslintrc</code> which should be placed in the root directory of the project.</p>
+<p>A sample <code>.eslintrc</code> file looks like this :</p>
+<pre><code class="lang-js"># &quot;off&quot; or 0 - turn the rule off
+# &quot;warn&quot; or 1 - turn the rule on as a warning(doesn&#x2019; t affect exit code)
+# &quot;error&quot; or 2 - turn the rule on as an error(exit code is 1 when triggered)
+{
+  &quot;parser&quot;: &quot;babel-eslint&quot;,
+  &quot;env&quot;: {
+    &quot;browser&quot;: true
+  },
+  &quot;plugins&quot;: [
+    &quot;react&quot;,
+    &quot;react-native&quot;
+  ],
+  &quot;ecmaFeatures&quot;: {
+    &quot;jsx&quot;: true
+  },
+  &quot;extends&quot;: [&quot;eslint:recommended&quot;, &quot;plugin:react/recommended&quot;],
+  &quot;rules&quot;: {
+    &quot;react/no-did-mount-set-state&quot;: 2,
+    &quot;react/no-direct-mutation-state&quot;: 2,
+    &quot;react/jsx-uses-vars&quot;: 2,
+    &quot;no-undef&quot;: 2,
+    &quot;semi&quot;: 2,
+    &quot;react/prop-types&quot;: 2,
+    &quot;react/jsx-no-bind&quot;: 2,
+    &quot;react/jsx-no-duplicate-props&quot;: 2,
+    ....
+    ....
+    ....
+  },
+  &quot;globals&quot;: {
+    &quot;GLOBAL&quot;: false,
+    &quot;it&quot;: false,
+    &quot;expect&quot;: false,
+    &quot;describe&quot;: false,
+    ....
+    ....
+    ....
+   }
+}
+</code></pre>
+<p>The important area in the above configuration is the rules section. This section controls all the code conventions followed in the project.</p>
+<p>Complete list of all the available rules are present here:  <a href="http://eslint.org/docs/rules/" target="_blank">http://eslint.org/docs/rules/</a></p>
+<p>It can be pretty overwhelming at first to decide which rules should go in. Hence we can start with</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;extends&quot;</span>: [<span class="hljs-string">&quot;eslint:recommended&quot;</span>, <span class="hljs-string">&quot;plugin:react/recommended&quot;</span>]
+</code></pre>
+<p>These should cover all the basic rules needed.</p>
+<p>But we recommend you add these also</p>
+<pre><code class="lang-js"><span class="hljs-string">&quot;rules&quot;</span>: {
+    <span class="hljs-string">&quot;react/no-did-mount-set-state&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;react/no-direct-mutation-state&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;react/jsx-uses-vars&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;no-undef&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;semi&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;react/prop-types&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;react/jsx-no-bind&quot;</span>: <span class="hljs-number">2</span>,
+    <span class="hljs-string">&quot;react/jsx-no-duplicate-props&quot;</span>: <span class="hljs-number">2</span>,
+    ....
+    ....
+    ....
+  },
+</code></pre>
+<p>Rest of the rules can be added based on what conventions the team decides to follow  in the project.</p>
+<h2 id="recommendations">Recommendations</h2>
+<p>A suggestion would be that we add more of auto-fixable rules as the corrections suggested by these rules can be auto fixed by the editor with eslint plugin while saving the file itself. This would reduce the time that a developer would spend fixing lint than writing actual code.</p>
+<p>Also  we recommend  using eslint for spacing/tabs instead of other methods like<code>.editorconfig</code>. This way, all the code conventions can be configured via single utility <strong>(eslint)</strong>. Also, indentations and spacing can be auto fixed by the editor itself with auto fix on save.</p>
+<p>The code till here can be found on the <strong>branch</strong> <a href="https://github.com/master-atul/react-native-plus-plus-code/tree/chapter/6/6.1" target="_blank">chapter/6/6.1</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.0-intro.html" class="navigation navigation-prev " aria-label="Previous page: Coventions and Code Style 🎓">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.2-git-pre-hooks.html" class="navigation navigation-next " aria-label="Next page: Github Pre-push/Pre-commit Hooks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ESLint : The guardian of code conventions ⚔️","level":"2.2.1","depth":2,"next":{"title":"Github Pre-push/Pre-commit Hooks","level":"2.2.2","depth":2,"path":"6-conventions-and-code-style/6.2-git-pre-hooks.md","ref":"6-conventions-and-code-style/6.2-git-pre-hooks.md","articles":[]},"previous":{"title":"Coventions and Code Style 🎓","level":"2.2","depth":1,"path":"6-conventions-and-code-style/6.0-intro.md","ref":"6-conventions-and-code-style/6.0-intro.md","articles":[{"title":"ESLint : The guardian of code conventions ⚔️","level":"2.2.1","depth":2,"path":"6-conventions-and-code-style/6.1-eslint.md","ref":"6-conventions-and-code-style/6.1-eslint.md","articles":[]},{"title":"Github Pre-push/Pre-commit Hooks","level":"2.2.2","depth":2,"path":"6-conventions-and-code-style/6.2-git-pre-hooks.md","ref":"6-conventions-and-code-style/6.2-git-pre-hooks.md","articles":[]},{"title":"Environment Variables","level":"2.2.3","depth":2,"path":"6-conventions-and-code-style/6.3-environment-variables.md","ref":"6-conventions-and-code-style/6.3-environment-variables.md","articles":[]},{"title":"Speed up development with some and ES7 features 🤘","level":"2.2.4","depth":2,"path":"6-conventions-and-code-style/6.4-es7-features.md","ref":"6-conventions-and-code-style/6.4-es7-features.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-plus","disqus","expo-snack","ga","edit-link","back-to-top-button","githubcontributors"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"rnMadeEasy"},"fontsettings":{"theme":"white","family":"sans","size":2},"expo-snack":{"myConfigKey":"it's the default value"},"highlight":{},"back-to-top-button":{},"ga":{"configuration":"auto","token":"UA-XXXX-Y"},"githubcontributors":{"contributorWidth":"300px","githubOwner":"master-atul","githubRepository":"AndroidManager"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/master-atul/react-native-plus-plus/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6-conventions-and-code-style/6.1-eslint.md","mtime":"2017-12-11T20:46:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-12T15:54:23.682Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-githubcontributors/contributors.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
