@@ -15,15 +15,15 @@
   },
   "pluginsConfig": {
     "disqus": {
-      "shortName": "rnMadeEasy"
+      "shortName": "reactnative-guide"
     },
     "githubcontributors": {
-      "githubOwner": "master-atul",
-      "githubRepository": "AndroidManager"
+      "githubOwner": "react-made-native-easy",
+      "githubRepository": "react-made-native-easy.github.io"
     },
     "edit-link": {
-      "base": "https://github.com/master-atul/react-native-plus-plus/blob/master",
-      "label": "Edit This Page"
+      "base": "https://github.com/react-made-native-easy/react-made-native-easy.github.io",
+      "label": "Edit"
     },
     "ga": {
       "token": "UA-XXXX-Y"
