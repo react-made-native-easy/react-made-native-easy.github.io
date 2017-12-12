@@ -22,7 +22,7 @@
       "githubRepository": "book"
     },
     "edit-link": {
-      "base": "https://github.com/react-made-native-easy/book",
+      "base": "https://github.com/react-made-native-easy/book/blob/master",
       "label": "Edit"
     },
     "ga": {
