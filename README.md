@@ -3,11 +3,10 @@
 </div>
 
 
-# <center>React made Native easy</center>
+<h1 align='center'>React made Native easy</h1>
 <p align='center'>Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
 
-
-#### <center>React/Redux best practices + React Native + Robust DevOps pipeline<br/>↘️ ⬇️ ↙️<br/>A fine native app for iOS, Android (and Web).</center>
+<h4 align='center'>React/Redux best practices + React Native + Robust DevOps pipeline<br/>↘️ ⬇️ ↙️<br/>A fine native app for iOS, Android (and Web).</h4>
 
 
 >A reference for building production grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with react and ES6 and want to build complex native apps.
@@ -32,15 +31,13 @@ The knowledge is based on the experience of working with React Native apps for a
 - react-native developers who want to extend their codebase to support other platforms by just following some code conventions.
 
 <br/>
-<center><i>We will be building an application while learning react-native. So be ready to get your hands dirty.</i></center>
-
-<div style="text-align:center">
-  <br/>
+<p align='center'><i>We will be building an application while learning react-native. So be ready to get your hands dirty.</i>
+<br/>
+<br/>
   <img src="/assets/images/0/getset.gif" style="width: 80%;display:inline-block;" hspace="20"/>
-</div>
+</p>
 
-
-### Authors
+<h3 align='center'>Authors</h3>
 <center>
   {% GitHubContributors %}
   {% endGitHubContributors %}
@@ -48,7 +45,7 @@ The knowledge is based on the experience of working with React Native apps for a
 
 <hr/>
 
-##### [Download a .pdf, .epub, or .mobi]() //TODO add link
+##### [Download a .pdf, .epub, or .mobi](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
 ##### [Contribute, stars, suggestions, and fixes on github](https://github.com/react-made-native-easy/react-made-native-easy.github.io)
 
 <hr/>

@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction 🎉](README.md)
+* [Introduction](README.md)
 * [React Native Internals 📡](3-react-native-internals/3.1-react-native-internals.md)
 * [Setting up the project 🌈](4-setting-up-the-project/4.1-installing-react-native.md)
 
