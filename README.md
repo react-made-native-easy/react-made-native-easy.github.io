@@ -46,7 +46,7 @@ The knowledge is based on the experience of working with React Native apps for a
 <hr/>
 
 ##### [Download a .pdf, .epub, or .mobi](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
-##### [Contribute, stars, suggestions, and fixes on github](https://github.com/react-made-native-easy/react-made-native-easy.github.io)
+##### [Contribute, stars, suggestions, and fixes on github](https://github.com/react-made-native-easy/book)
 
 <hr/>
 <p align='center'><b>GET, SET, CODE!!</b></p>
