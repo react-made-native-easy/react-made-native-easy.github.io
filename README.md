@@ -3,10 +3,8 @@
 </div>
 
 
-<h1 align='center'>React made Native easy</h1>
-<p align='center'>Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
-
-<h4 align='center'>React/Redux best practices + React Native + Robust DevOps pipeline<br/>↘️ ⬇️ ↙️<br/>A fine native app for iOS, Android (and Web).</h4>
+# React Made Native Easy
+<p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
 
 
 >A reference for building production grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with react and ES6 and want to build complex native apps.
