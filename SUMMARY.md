@@ -6,6 +6,7 @@
 
 Start building the app 😎
 ----
+* [See it in action! 🎬](see-it-in-action.md)
 * [Project Structure 🏢](5-project-structure-and-start-building-some-app/5.0-intro.md)
   * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
   * [Creating basic components and writing platform specific code](5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.md)
