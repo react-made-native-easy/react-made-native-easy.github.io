@@ -49,3 +49,5 @@ The knowledge is based on the experience of working with React Native apps for a
 
 <hr/>
 <p align='center'><b>GET, SET, CODE!!</b></p>
+
+<img src="/assets/images/license.png" style="width:80px"/>
