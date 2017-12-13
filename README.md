@@ -36,6 +36,7 @@ The knowledge is based on the experience of working with React Native apps for a
   <img src="/assets/images/0/getset.gif" style="width: 80%;display:inline-block;" hspace="20"/>
 </p>
 
+
 <h3 align='center'>Authors</h3>
 <center>
   {% GitHubContributors %}
@@ -45,7 +46,13 @@ The knowledge is based on the experience of working with React Native apps for a
 <hr/>
 
 ##### [Download a .pdf, .epub, or .mobi](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
+
+
+<br/>
+
+This is an open source book. Please feel free to contibute. You can do so at:
 ##### [Contribute, stars, suggestions, and fixes on github](https://github.com/react-made-native-easy/book)
+
 
 <hr/>
 <p align='center'><b>GET, SET, CODE!!</b></p>
