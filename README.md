@@ -1,5 +1,5 @@
 <div style="text-align:center">
-<img src="/cover.jpg" style="display:inline-block;" hspace="0">
+<img src="/cover.jpg" style="display:inline-block;max-height:90vh;" hspace="0">
 </div>
 
 
