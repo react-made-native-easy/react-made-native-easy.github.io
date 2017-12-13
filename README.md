@@ -30,9 +30,12 @@ The knowledge is based on the experience of working with React Native apps for a
 - react-native developers who want to extend their codebase to support other platforms by just following some code conventions.
 
 <br/>
-<p align='center'><i>We will be building an application while learning react-native. So be ready to get your hands dirty.</i>
+**We will build a [Note Taker](https://github.com/react-made-native-easy/note-taker) application while learning the concepts. There is a link to the code at the end of every chapter. You can also see the app live if you have [Expo](https://expo.io/) app on your phone.**
+
+**So be ready to get your hands dirty.**
+
 <br/>
-<br/>
+<p align='center'>
   <img src="/assets/images/0/getset.gif" style="width: 80%;display:inline-block;" hspace="20"/>
 </p>
 
