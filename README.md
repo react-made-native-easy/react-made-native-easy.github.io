@@ -1,7 +1,8 @@
 <div style="text-align:center">
-<img src="/cover.jpg" style="display:inline-block;max-height:90vh;" hspace="0">
+<img src="/cover.jpg" style="display:inline-block;max-height:85vh;" hspace="0">
 </div>
 
+ <a href="https://www.reactnative.guide" style="display:block;text-align:center;font-weight:bold;text-decoration:none">https://www.reactnative.guide </a>
 
 # React Made Native Easy
 <p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
