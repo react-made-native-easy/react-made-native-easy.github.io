@@ -3,7 +3,8 @@
 }
 
 #GitHubContributors > div {
-  display: inline-flex!important //to override inline styles
+  display: inline-flex!important
+  /*to override inline styles*/
 }
 
 .contributor-data {
