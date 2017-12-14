@@ -51,6 +51,8 @@ The knowledge is based on the experience of working with React Native apps for a
 ##### [Download a .pdf, .epub, or .mobi](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
 
 
+### CONTRIBUTIONS
+
 <br/>
 
 This is an open source book. Please feel free to contibute. You can do so at:
