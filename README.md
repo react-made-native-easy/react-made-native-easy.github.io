@@ -48,15 +48,23 @@ The knowledge is based on the experience of working with React Native apps for a
 
 <hr/>
 
-##### [Download a .pdf, .epub, or .mobi](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
+### DOWNLOAD YOUR COPY
+
+Download a .pdf, .epub, or .mobi here. If you prefer offline hard copy. Pleae feel free to take a printout.
+
+https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details
+
 
 
 ### CONTRIBUTIONS
 
-<br/>
+This is an open source book hosted on Github.We will keep updating the contents of the book as and when it gets outdated. Please feel free to contibute or leave a comment in the disqus.
 
-This is an open source book. Please feel free to contibute. You can do so at:
-##### [Contribute, stars, suggestions, and fixes on github](https://github.com/react-made-native-easy/book)
+Github link:
+
+https://github.com/react-made-native-easy/book
+
+Please star the repo if you like it ;)
 
 
 <hr/>
