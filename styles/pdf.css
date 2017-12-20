@@ -7,6 +7,10 @@
   /*to override inline styles*/
 }
 
+#GitHubContributors div + div + div {
+  display: none!important;
+}
+
 .contributor-data {
   align-self: center;
   display: inline-flex;
