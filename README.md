@@ -60,6 +60,13 @@ https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/detai
 
 This is an open source book hosted on Github.We will keep updating the contents of the book as and when it gets outdated. Please feel free to contribute or leave a comment in the disqus.
 
+
+**Hall of Thanks**
+
+- [Will Bowlin](https://github.com/wbowlin)
+- [Vishal Vasnani](https://github.com/vishal9950)
+
+
 Github link:
 
 https://github.com/react-made-native-easy/book
@@ -71,8 +78,3 @@ Please star the repo if you like it ;)
 <p align='center'><b>GET, SET, CODE!!</b></p>
 
 <img src="/assets/images/license.png" style="display:block;margin:0 auto;width:100px"/>
-
-**Hall of Thanks**
-
-- [Will Bowlin](https://github.com/wbowlin)
-- [Vishal Vasnani](https://github.com/vishal9950)
