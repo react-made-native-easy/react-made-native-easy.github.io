@@ -71,3 +71,8 @@ Please star the repo if you like it ;)
 <p align='center'><b>GET, SET, CODE!!</b></p>
 
 <img src="/assets/images/license.png" style="display:block;margin:0 auto;width:100px"/>
+
+**Hall of Thanks**
+
+- [Will Bowlin](https://github.com/wbowlin)
+- [Vishal Vasnani](https://github.com/vishal9950)
