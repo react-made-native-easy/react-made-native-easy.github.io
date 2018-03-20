@@ -3,7 +3,7 @@
 .grunt
 
 ## Dependency directory
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+## https://byjoeybaker.com/why-you-should-never-commit-node-modules-in-nodejs
 node_modules
 
 # Book build output
