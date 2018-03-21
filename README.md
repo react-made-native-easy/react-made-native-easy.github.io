@@ -71,7 +71,10 @@ This is an open source book hosted on Github. We will keep updating the contents
 
 ## HALL OF THANKS
 ### **Reviewer / Proof reading** 🤓
-- [**Kakul Gupta**](https://github.com/react-made-native-easy/book/commits?author=kakulgupta)
+  <img src="https://avatars2.githubusercontent.com/u/10727047?s=100" width=70 height=70 />
+
+[**Kakul Gupta**](https://github.com/react-made-native-easy/book/commits?author=kakulgupta)
+
 
 #### Contributors
 - [Will Bowlin](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
