@@ -69,11 +69,13 @@ https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/detai
 This is an open source book hosted on Github. We will keep updating the contents of the book as and when it gets outdated. Please feel free to contribute or leave a comment in the Disqus.
 
 
-### HALL OF THANKS
-
+## HALL OF THANKS
+### **Reviewer / Proof reading** 🤓
 - [**Kakul Gupta**](https://github.com/react-made-native-easy/book/commits?author=kakulgupta)
-- [**Will Bowlin**](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
-- [**Vishal Vasnani**](https://github.com/react-made-native-easy/book/commits?author=vishal9950)
+
+#### Contributors
+- [Will Bowlin](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
+- [Vishal Vasnani](https://github.com/react-made-native-easy/book/commits?author=vishal9950)
 
 
 
