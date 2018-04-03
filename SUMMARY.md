@@ -36,8 +36,8 @@ Start building the app 😎
 * [DevOps ⚙️](11-devops/11.0-devops.md)
   * [Android Build setup](11-devops/11.1-android-build-setup.md)
   * [iOS Build setup](11-devops/11.2-ios-build-setup.md)
-  * [CI setup](11-devops/11.3-ci-setup.md)
-  * [Test Fairy setup](11-devops/11.4-test-fairy-setup.md)
+  <!-- * [CI setup](11-devops/11.3-ci-setup.md) -->
+  <!-- * [Test Fairy setup](11-devops/11.4-test-fairy-setup.md) -->
 * [SVG Icons using react-native-vector-icons 🐾](12-svg-icons-using-react-native-vector-icons/12.0-intro.md)
   * [Custom Icon set](12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.md)
 * [Internationalization 🇮🇳🇺🇸🇷🇺](13-internationalization/13.1-framework-intro.md)
