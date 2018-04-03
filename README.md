@@ -79,7 +79,7 @@ This is an open source book hosted on Github. We will keep updating the contents
 #### Contributors
 - [Will Bowlin](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
 - [Vishal Vasnani](https://github.com/react-made-native-easy/book/commits?author=vishal9950)
-
+- [Aritra Ghosh](https://github.com/react-made-native-easy/book/commits?author=Ar11rA)
 
 
 
