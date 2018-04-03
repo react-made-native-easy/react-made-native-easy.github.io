@@ -51,10 +51,10 @@ Start building the app 😎
 * [Custom Native Modules 🍮](16-custom-native-modules/16.0-intro.md)
   * [Android Native Modules](16-custom-native-modules/16.1-android-native-module.md)
   * [iOS Native Modules](16-custom-native-modules/16.2-ios-native-module.md)
-<!-- * [Migrating to WEB](17-migrating-to-web/17.0-intro.md)
-  * [Interface File](17-migrating-to-web/17.1-interface-file.md)
-  * [Rewrite all Dumb components](17-migrating-to-web/17.2-rewrite-all-dumb-components.md)
-  * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md) -->
+<!-- * [Migrating to WEB](17-migrating-to-web/17.0-intro.md) -->
+  <!-- * [Interface File](17-migrating-to-web/17.1-interface-file.md) -->
+  <!-- * [Rewrite all Dumb components](17-migrating-to-web/17.2-rewrite-all-dumb-components.md) -->
+  <!-- * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md) -->
 <!-- * [GOTCHAS](18-Gotchas/18.0-intro.md) -->
 ----
 * [References](references.md)
