@@ -1,16 +1,16 @@
-# Introduction
+<div style="text-align:center">
+<img src="/cover.jpg" style="display:inline-block;max-height:85vh;" hspace="0">
+</div>
 
-![](.gitbook/assets/cover.jpg)
+ <a href="https://www.reactnative.guide" style="display:block;text-align:center;font-weight:bold;text-decoration:none">https://www.reactnative.guide </a>
 
-[https://www.reactnative.guide](https://www.reactnative.guide)
+# React Made Native Easy
+<p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
 
-## React Made Native Easy
 
-Written by [Rahul Gaba](http://rahulgaba.com) and [Atul R](http://atulr.com)
+>A reference for building production-grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with React and ES6 and want to build complex native apps.
 
-> A reference for building production-grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with React and ES6 and want to build complex native apps.
-
-#### You will learn
+### You will learn
 
 * How React Native works internally and how to debug RN apps.
 * How to test and write modular code in react-native.
@@ -22,53 +22,69 @@ We are following a native-first approach while keeping an eye out for potentiall
 
 Our knowledge is based on our experience of working with React Native apps for around 2 years and helping clients launch their apps quicker than ever before.
 
-#### This book is for
+### This book is for
 
-* React developers who are planning to start with react-native applications.
-* Web Developers who know basic ReactJS fundamentals and want to learn best practices for state management and native development.
-* Native iOS/Android developers who know ReactJS and want to start building apps using React-Native.
-* React-Native developers who want to extend their codebase to support other platforms by just following some code conventions.
+- React developers who are planning to start with react-native applications.
+- Web Developers who know basic ReactJS fundamentals and want to learn best practices for state management and native development.
+- Native iOS/Android developers who know ReactJS and want to start building apps using React-Native.
+- React-Native developers who want to extend their codebase to support other platforms by just following some code conventions.
 
-  
- **We will build a **[**Note Taker**](https://github.com/react-made-native-easy/note-taker)** application while learning the concepts. There is a link to the code at the end of every chapter. You can also see the app live if you have the **[**Expo**](https://expo.io/)** app on your phone.**
+<br/>
+**We will build a [Note Taker](https://github.com/react-made-native-easy/note-taker) application while learning the concepts. There is a link to the code at the end of every chapter. You can also see the app live if you have the [Expo](https://expo.io/) app on your phone.**
 
 **So be ready to get your hands dirty.**
 
-![](.gitbook/assets/getset.gif)
+<br/>
+<p align='center'>
+  <img src="/assets/images/0/getset.gif" style="width: 80%;display:inline-block;" hspace="20"/>
+</p>
 
-Authors
 
- {% GitHubContributors %} {% endGitHubContributors %}
+<h3 align='center'>Authors</h3>
+<center>
+  {% GitHubContributors %}
+  {% endGitHubContributors %}
+</center>
 
-Github link: [https://github.com/react-made-native-easy/book](https://github.com/react-made-native-easy/book)
+<hr/>
 
-Please star the repo if you like it ;\)
 
-#### DOWNLOAD YOUR COPY
+Github link:
+https://github.com/react-made-native-easy/book
+
+Please star the repo if you like it ;)
+
+
+
+### DOWNLOAD YOUR COPY
 
 Download a .pdf, .epub, or .mobi here. If you prefer a hard copy, please feel free to take a printout.
 
-[https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details](https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details)
+https://www.gitbook.com/book/react-made-native-easy/react-made-native-easy/details
 
-#### CONTRIBUTIONS
+
+
+### CONTRIBUTIONS
 
 This is an open source book hosted on Github. We will keep updating the contents of the book as and when it gets outdated. Please feel free to contribute or leave a comment in the Disqus.
 
-### HALL OF THANKS
 
-#### **Reviewer / Proof reading** 🤓
-
-![](https://avatars2.githubusercontent.com/u/10727047?s=100)
+## HALL OF THANKS
+### **Reviewer / Proof reading** 🤓
+  <img src="https://avatars2.githubusercontent.com/u/10727047?s=100" width=70 height=70 />
 
 [**Kakul Gupta**](https://github.com/react-made-native-easy/book/commits?author=kakulgupta)
 
-**Contributors**
 
-* [Will Bowlin](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
-* [Vishal Vasnani](https://github.com/react-made-native-easy/book/commits?author=vishal9950)
-* [Aritra Ghosh](https://github.com/react-made-native-easy/book/commits?author=Ar11rA)
+#### Contributors
+- [Will Bowlin](https://github.com/react-made-native-easy/book/commits?author=wbowlin)
+- [Vishal Vasnani](https://github.com/react-made-native-easy/book/commits?author=vishal9950)
+- [Aritra Ghosh](https://github.com/react-made-native-easy/book/commits?author=Ar11rA)
 
-**GET, SET, CODE!!**
 
-![](.gitbook/assets/license.png)
 
+
+<hr/>
+<p align='center'><b>GET, SET, CODE!!</b></p>
+
+<img src="/assets/images/license.png" style="display:block;margin:0 auto;width:100px"/>
