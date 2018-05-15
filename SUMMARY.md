@@ -5,7 +5,7 @@
 * [Setting up the project 🌈](4-setting-up-the-project/4.1-installing-react-native.md)
 
 Start building the app 😎
-----
+------
 * [See it in action! 🎬](see-it-in-action.md)
 * [Project Structure 🏢](5-project-structure-and-start-building-some-app/5.0-intro.md)
   * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
