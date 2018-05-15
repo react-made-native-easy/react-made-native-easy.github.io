@@ -1,0 +1,17 @@
+# DevOps ⚙️
+
+Whenever we start a new project, after setting up the boilerplate, best practices suggest that we set up the continuous deployment so that the team can easily trigger and receive test builds of the latest app code.
+
+This also makes it easier for the testing team to receive test builds without continuously bugging the developers.
+
+A few basic requirements for a good DevOps setup can be:
+
+* Lint and tests with coverage should run whenever a pull request is raised.
+* Every time changes are merged to the  master branch, we want the CI process to build the code, run lint and tests, and then build and publish apps to be distributed to the internal testing team.
+* Each test build should have the same version and build number for Android and iOS builds, corresponding to each version of the code.
+* An email should be sent out to all testers whenever a new build is available.
+* Developers should also have the option to manually build on their local machines quickly.
+* Ability to pass environment variables to the scripts so that we can generate different builds for different development environments like staging, preprod, and production.
+
+The following chapters would show step by step on how to achieve these.
+

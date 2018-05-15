@@ -1,0 +1,111 @@
+# Adding language toggle feature
+
+Our framework set up for internationalization is done, but an important part still remains, which is implementing a change language feature. Every internationalization enabled app will have this feature. Let's go ahead and build the same for our NoteTaker app.
+
+Let's start by adding a toggle button in our Home component. The button should show the current language and should toggle the language onPress.
+
+For this, we would need:
+
+* Current language from Redux store.
+* Ability to change the language on action dispatch.
+
+For now, we will create a button in `Home.component.js` which will accept currentLanguage and toggleLanguage functions as props.
+
+> Home.component.js
+
+```javascript
+const {..., currentLanguage, toggleLanguage} = this.props;
+return (
+  ...
+  <Touchable style={styles.changeLanguage} onPress={toggleLanguage}>
+    <Text style={styles.changeLanguageText}>{currentLanguage}</Text>
+  </Touchable>
+  ...
+)
+```
+
+## Integration with Redux store
+
+1. Create a `userPreference` reducer which will have a key called language. The initialState of language should come from language.utils. Our reducer would look something like this:
+
+   > reducers/userPreferences.reducer.js
+
+   ```javascript
+    import {CHANGE_LANGUAGE} from '../actions/index.actions';
+    import {getCurrentLocale} from '../../utils/language.utils';
+
+    const initialState = {language: getCurrentLocale()};
+
+    const userPreferences = (state = initialState, action) => {
+      switch (action.type) {
+      case CHANGE_LANGUAGE: {
+        return {...state, language: action.payload};
+      }
+      default:
+        return state;
+      }
+    };
+
+    export default userPreferences;
+   ```
+
+2. We need to make sure that the language in Redux store is always in sync with the language in i18n module. In other words, we need an `action creator` which changes the language in both i18n module and Redux store.
+
+   We will use [redux-thunk](https://www.npmjs.com/package/redux-thunk) middleware for this. You can use [redux-saga](https://redux-saga.js.org/) to achieve this as well. To know more about thunks, go [here](https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559).
+
+   > redux/thunks/index.thunks.js
+
+   ```javascript
+    import {changeLanguage} from '../actions/index.actions.js';
+    import {setLocale} from '../../utils/language.utils';
+
+    export const setCurrentLanguage = (lang) => (dispatch) => {
+      setLocale(lang);
+      dispatch(changeLanguage(lang));
+    };
+
+    export const toggleLanguage = () => (dispatch, getState) => {
+      const currentLanguage = getState().userPreferences.language;
+      if (currentLanguage === 'en') {
+        dispatch(setCurrentLanguage('hi'));
+      }  else {
+        dispatch(setCurrentLanguage('en'));
+      }
+    };
+   ```
+
+3. After defining the `setCurrentLanguage` and `toggleLanguage`, we can dispatch them on onPress of our toggle button. Let's pass toggleLanguage and currentLanguage to the Home Component.
+
+   > Home.page.js
+
+   ```javascript
+    import {toggleLanguage} from '../redux/thunks/index.thunks';
+
+    class HomePage extends Component {
+      render () {
+        const {..., toggleLanguage, currentLanguage} = this.props;
+        return (
+          <Home {...} currentLanguage={currentLanguage} toggleLanguage={toggleLanguage}/>
+        );
+      }
+     }
+    const mapStateToProps = (state) => ({
+      ...
+      currentLanguage: state.userPreferences.language
+    });
+    const mapDispatchToProps = (dispatch) => ({
+      ...
+      toggleLanguage: () => dispatch(toggleLanguage())
+    });
+   ```
+
+That's all! You should now be able to see a toggle button on the Home page showing the current language and be able to toggle the language on press.
+
+![](../../.gitbook/assets/13.2-en.png)
+
+![](../../.gitbook/assets/13.2-hi.png)
+
+Don't worry about the header text not being changed. We will fix it in the coming chapter.
+
+The code till here can be found on the **branch** [chapter/13/13.2](https://github.com/react-made-native-easy/note-taker/tree/chapter/13/13.2)
+

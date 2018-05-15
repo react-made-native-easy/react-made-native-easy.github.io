@@ -1,0 +1,63 @@
+# Styling 💅🏻
+
+In React Native we use StyleSheets to write our styling. StyleSheets can be thought of as a subset of CSS along with a few additional helpers for RN. StyleSheets, unlike CSS, are pure JavaScript objects. This might confuse some web developers in the beginning and introduce a slight learning curve. StyleSheets in React Native are used somewhat similarly to inline styles in web. Hence, you do not have access to pseudo-classes like `:hover`, `:active`, etc.
+
+## Example
+
+To add padding and border to a span in CSS we will write:
+
+```css
+.button {
+  padding: 10px;
+  text-align: : center;
+  border: 1px solid black;
+}
+```
+
+Then we will add this class to our span like this:
+
+```markup
+<span class="button"> Test </span>
+```
+
+Resulting in :
+
+ Test
+
+In React Native, there is no concept of pixels or classes. Instead, our sizes will be specified in "units" which will then be translated to pixels based on the pixel density of the screen automatically by RN. If we write the same `View` in a React Native StyleSheet, it would look something like this:
+
+> styles.js
+>
+> ```javascript
+> import { StyleSheet } from 'react-native';
+> export default StyleSheet.create({
+>   button: {
+>     padding: 10,
+>     textAlign: 'center',
+>     borderWidth: 1,
+>     borderColor: 'black'
+>   }
+> });
+> ```
+
+These styles can be added to our View using:
+
+```javascript
+import styles from './styles.js';
+```
+
+```markup
+...
+...
+...
+<View style={styles.button}></View>
+```
+
+Note that since we are writing JavaScript objects:
+
+* We write each style attribute in its camel-cased version of CSS
+* We import our StyleSheet into our components and used them by declaring a style attribute as shown instead of classes.
+* There are no shorthands like `border:'1px solid black'`
+
+> Just like web, it is very easy to go wrong with CSS and end up with a style code that is unmanageable. Hence, we would like to introduce a few basic guidelines in the next chapters, so that we can get the most from our styles.
+

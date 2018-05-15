@@ -1,61 +1,47 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
-* [React Native Internals 📡](3-react-native-internals/3.1-react-native-internals.md)
-* [Setting up the project 🌈](4-setting-up-the-project/4.1-installing-react-native.md)
+* [React Native Internals 📡](react-native-internals.md)
+* [Setting up the project 🌈](setting-up-the-project.md)
 
-Start building the app 😎
-------
-* [See it in action! 🎬](see-it-in-action.md)
-* [Project Structure 🏢](5-project-structure-and-start-building-some-app/5.0-intro.md)
-  * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
-  * [Creating basic components and writing platform-specific code](5-project-structure-and-start-building-some-app/5.2-basic-components-and-platform-specific-code.md)
-* [Conventions and Code Style 🎓](6-conventions-and-code-style/6.0-intro.md)
-  * [ESLint: The guardian of code conventions ⚔️](6-conventions-and-code-style/6.1-eslint.md)
-  * [Github Pre-push/Pre-commit Hooks](6-conventions-and-code-style/6.2-git-pre-hooks.md)
-  * [Environment Variables](6-conventions-and-code-style/6.3-environment-variables.md)
-  * [Speed up development with some and ES7 features 🤘](6-conventions-and-code-style/6.4-es7-features.md)
-* [Testing and Debugging 🚫🐞](7-testing/7.0-intro.md)
-  * [Jest setup](7-testing/7.1-jest-setup.md)
-  * [Snapshots](7-testing/7.2-snapshots.md)
-  * [Testing stateful components using Enzyme](7-testing/7.3-enzyme-testing.md)
-  * [Mocking RN modules  ](7-testing/7.4-mocking-rn-modules.md)
-  <!-- * [FYI Cache](7-testing/7.5-fyi-cache.md) -->
-  <!-- * [Using React-Native Debugger for debugging](7-testing/7.6-using-react-native-debugger-for-debugging.md) -->
-* [Styling 💅🏻](8-styling/8.0-intro.md)
-  * [Theme Variables](8-styling/8.1-theme-variables.md)
-  * [Common Styles/Mixins](8-styling/8.2-common-styles-mixins.md)
-  * [Separating styles from component](8-styling/8.3-separating-styles-from-component.md)
-* [Redux 🗄](9-redux/9.0-intro.md)
-  * [Redux setup](9-redux/9.1-redux-setup.md)
-  * [Presentational VS Containers](9-redux/9.2-presentational-vs-containers.md)
-* [Navigation 🚪](10-navigation/10.0-intro.md)
-  * [Using React-navigation](10-navigation/10.1-using-react-navigation.md)
-  * [Integrating with redux store](10-navigation/10.2-integrating-with-redux-store.md)
-  * [File Structure for routes](10-navigation/10.3-file-structure-for-routes.md)
-* [DevOps ⚙️](11-devops/11.0-devops.md)
-  * [Android Build setup](11-devops/11.1-android-build-setup.md)
-  * [iOS Build setup](11-devops/11.2-ios-build-setup.md)
-  <!-- * [CI setup](11-devops/11.3-ci-setup.md) -->
-  <!-- * [Test Fairy setup](11-devops/11.4-test-fairy-setup.md) -->
-* [SVG Icons using react-native-vector-icons 🐾](12-svg-icons-using-react-native-vector-icons/12.0-intro.md)
-  * [Custom Icon set](12-svg-icons-using-react-native-vector-icons/12.1-creating-custom-iconset.md)
-* [Internationalization 🇮🇳🇺🇸🇷🇺](13-internationalization/13.1-framework-intro.md)
-  * [Adding language toggle feature](13-internationalization/13.2-language-toggle.md)
-  * [Integration with react-navigation](13-internationalization/13.3-integration-with-react-navigation.md)
-<!-- * [Axios and API mocks](14-axios-and-api-mocks/14-intro.md) -->
-<!-- * [Third Party components](15-third-party-components/15.0-intro.md) -->
-  <!-- * [When should I search for pre-built components](15-third-party-components/15.1-when-should-i-search-for-pre-built-components.md) -->
-  <!-- * [Linking components](15-third-party-components/15.2-linking-components.md) -->
-  <!-- * [Recommended components](15-third-party-components/15.3-recommended-components.md) -->
-* [Custom Native Modules 🍮](16-custom-native-modules/16.0-intro.md)
-  * [Android Native Modules](16-custom-native-modules/16.1-android-native-module.md)
-  * [iOS Native Modules](16-custom-native-modules/16.2-ios-native-module.md)
-<!-- * [Migrating to WEB](17-migrating-to-web/17.0-intro.md) -->
-  <!-- * [Interface File](17-migrating-to-web/17.1-interface-file.md) -->
-  <!-- * [Rewrite all Dumb components](17-migrating-to-web/17.2-rewrite-all-dumb-components.md) -->
-  <!-- * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md) -->
-<!-- * [GOTCHAS](18-Gotchas/18.0-intro.md) -->
-----
-* [References](references.md)
-* [The End](the-end.md)
+## Start building the app 😎
+
+* [See it in action! 🎬](start-building-the-app/see-it-in-action.md)
+* [Project Structure 🏢](start-building-the-app/project-structure/README.md)
+  * [Customizing the project structure](start-building-the-app/project-structure/customizing-the-project-structure.md)
+  * [Creating basic components and writing platform-specific code](start-building-the-app/project-structure/creating-basic-components-and-writing-platform-specific-code.md)
+* [Conventions and Code Style 🎓](start-building-the-app/conventions-and-code-style/README.md)
+  * [ESLint: The guardian of code conventions ⚔️](start-building-the-app/conventions-and-code-style/eslint-the-guardian-of-code-conventions.md)
+  * [Github Pre-push/Pre-commit Hooks](start-building-the-app/conventions-and-code-style/github-pre-pushpre-commit-hooks.md)
+  * [Environment Variables](start-building-the-app/conventions-and-code-style/environment-variables.md)
+  * [Speed up development with some and ES7 features 🤘](start-building-the-app/conventions-and-code-style/speed-up-development-with-some-and-es7-features.md)
+* [Testing and Debugging 🚫🐞](start-building-the-app/testing-and-debugging/README.md)
+  * [Jest setup](start-building-the-app/testing-and-debugging/jest-setup.md)
+  * [Snapshots](start-building-the-app/testing-and-debugging/snapshots.md)
+  * [Testing stateful components using Enzyme](start-building-the-app/testing-and-debugging/testing-stateful-components-using-enzyme.md)
+  * [Mocking RN modules](start-building-the-app/testing-and-debugging/mocking-rn-modules.md)
+* [Styling 💅🏻](start-building-the-app/styling/README.md)
+  * [Theme Variables](start-building-the-app/styling/theme-variables.md)
+  * [Common Styles/Mixins](start-building-the-app/styling/common-stylesmixins.md)
+  * [Separating styles from component](start-building-the-app/styling/separating-styles-from-component.md)
+* [Redux 🗄](start-building-the-app/redux/README.md)
+  * [Redux setup](start-building-the-app/redux/redux-setup.md)
+  * [Presentational VS Containers](start-building-the-app/redux/presentational-vs-containers.md)
+* [Navigation 🚪](start-building-the-app/navigation/README.md)
+  * [Using React-navigation](start-building-the-app/navigation/using-react-navigation.md)
+  * [Integrating with redux store](start-building-the-app/navigation/integrating-with-redux-store.md)
+  * [File Structure for routes](start-building-the-app/navigation/file-structure-for-routes.md)
+* [DevOps ⚙️](start-building-the-app/devops/README.md)
+  * [Android Build setup](start-building-the-app/devops/android-build-setup.md)
+  * [iOS Build setup](start-building-the-app/devops/ios-build-setup.md)
+* [SVG Icons using react-native-vector-icons 🐾](start-building-the-app/svg-icons-using-react-native-vector-icons/README.md)
+  * [Custom Icon set](start-building-the-app/svg-icons-using-react-native-vector-icons/custom-icon-set.md)
+* [Internationalization 🇮🇳🇺🇸🇷🇺](start-building-the-app/internationalization/README.md)
+  * [Adding language toggle feature](start-building-the-app/internationalization/adding-language-toggle-feature.md)
+  * [Integration with react-navigation](start-building-the-app/internationalization/integration-with-react-navigation.md)
+* [Custom Native Modules 🍮](start-building-the-app/custom-native-modules/README.md)
+  * [Android Native Modules](start-building-the-app/custom-native-modules/android-native-modules.md)
+  * [iOS Native Modules](start-building-the-app/custom-native-modules/ios-native-modules.md)
+* [References](start-building-the-app/references.md)
+* [The End](start-building-the-app/the-end.md)
+

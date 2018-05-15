@@ -1,0 +1,235 @@
+# Integrating with redux store
+
+React-navigation comes with the ability to integrate with Redux. Though it is optional, we highly recommend doing this. Before reading this chapter, please make sure that you have a basic understanding of react-navigation. If not, please have a look at [this](https://reactnavigation.org/docs/getting-started.html).
+
+## Why Redux integration?
+
+React-navigation maintains its internal store to keep track of stacks, routes-history, etc., if not configured to the Redux store. This was done so that it is easy to configure the library and handle use cases when the app doesn't use Redux or does not require store linking. After installing the library and configuring routes, you will see something like this in the debugger when you navigate.
+
+![](../../.gitbook/assets/navigation-store.png)
+
+ As you can see, the library maintains its own store and it logs every action in the dev mode. The library also has the flexibility to be integrated with the Redux store of your application.
+
+While the integration is completely optional, we highly recommend doing this if your app is already using Redux because of the following reasons:
+
+1. It gives us a lot more flexibility to control the route state at every point in time. Consider a case where you want to call a function on every route change, for example for screen tracking. You can use redux-middleware in such a scenario.
+2. It makes the navigation much more readable and cleaner. You just have to dispatch an action with the routeName to which you want to navigate.
+3. It removes the dependency on needing a React component to be able to navigate. Consider a scenario where you want to navigate from your redux-thunk or a redux-saga file. You would be unable to do it without integrating react-navigation with Redux.
+
+## How do you integrate react-navigation to the Redux store?
+
+Integration with the Redux store is pretty easy. Let's continue with the integration in our NoteTaker app using **three** simple steps.
+
+Run `npm install react-navigation-redux-helpers` or `yarn add react-navigation-redux-helpers`
+
+1. In your reducer's index file, add the following:
+
+   > reducers/index.js
+
+   ```javascript
+   import {combineReducers} from 'redux';
+   import test from './test.reducer';
+   import Router from '../../routes';
+
+   const router = Router.router;
+   const homeNavAction = router.getActionForPathAndParams('home');
+   const initialNavState = router.getStateForAction(homeNavAction);
+
+   const nav = (state = initialNavState, action) => { 
+   const nextState = router.getStateForAction(action, state);
+   return nextState || state;
+   };
+
+   export default combineReducers({
+   test,
+   nav
+   });
+   ```
+
+   Now let's go through the code:
+
+   * `router.getActionForPathAndParams`: This function receives the key defined for a route in Navigator and params and returns an action which is needed to update the navigation state. In redux language, we need to call this action to navigate to a route. 
+
+   Output of this statement: `Object {type: "Navigation/NAVIGATE", routeName: "home", action: Object}`
+
+   This is the action that we get for the path 'home'. This becomes the initial route of our navigator.
+
+   * `router.getStateForAction(homeNavAction)`: The above step gives us the action for navigating to the initial route, now we have to update the state of the Navigator to actually navigate to the route. So we pass the action and the current state of the navigator to getStateForAction and it returns the new updated state. 
+
+   Output of this statement:
+
+```bash
+      Object {key: "StackRouterRoot", isTransitioning: false, index: 0, routes: Array(1)}
+      index: 0
+      isTransitioning: false
+      key: "id-1522736064605-0"
+      params: undefined
+      routeName: "home"
+      routes: Array(1) {
+              0: Object
+              key: "id-1522736173525-0"
+              params: undefined
+              routeName: "home"
+              }
+```
+
+1. Add React Navigation Redux Middleware to store:
+
+```javascript
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './reducers';
+import { createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers';
+
+import RouterWithNavState from './routes';
+
+const middleware = createReactNavigationReduxMiddleware(
+  'root',
+  state => state.nav,
+);
+
+const store = createStore(reducers, {}, applyMiddleware(middleware));
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <RouterWithNavState />
+      </Provider>
+    );
+  }
+}
+```
+
+1. Modify main routes file as follows:
+
+```javascript
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { StackNavigator, addNavigationHelpers } from 'react-navigation';
+import { createReduxBoundAddListener } from 'react-navigation-redux-helpers';
+import PropTypes from 'prop-types';
+
+//example routes
+import AuthRoutes from './auth.routes'; 
+//example component
+import Home from '../Components/Home';
+
+export const Router = StackNavigator({
+  home: {
+    screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  },
+  auth: {
+    screen: AuthRoutes,
+    navigationOptions: {
+      header: null
+    }
+  }
+});
+
+class RouterWithNavState extends Component {
+
+  render() {
+    const addListener = createReduxBoundAddListener('root');
+    const { dispatch, nav } = this.props;
+    return (
+      <Router
+        navigation={addNavigationHelpers({ dispatch, state: nav, addListener })}
+      />
+    );
+  }
+}
+
+
+const mapStateToProps = (state) => {
+  return ({
+    nav: state.nav
+  });
+};
+
+RouterWithNavState.propTypes = {
+  dispatch: PropTypes.func,
+  nav: PropTypes.object
+};
+
+export default connect(mapStateToProps)(RouterWithNavState);
+```
+
+After the integration, you will be able to see the navigation state and actions inside your debugger's store.
+
+![](../../.gitbook/assets/redux-navigation.png)
+
+## Using Redux Actions to navigate
+
+Since we are done with the Redux integration, let's test if the integration actually works and if we are able to navigate by dispatching an action.
+
+Let's refactor our Home.page.js file to dispatch an action on About button click instead of using this.props.navigation.
+
+> Home.page.js
+
+```javascript
+  import {connect} from 'react-redux';
+  import {NavigationActions} from 'react-navigation';
+
+  class HomePage extends Component {
+    render () {
+      return <Home onAboutPress={this.props.onAboutPress}/>;
+    }
+  }
+
+  const mapDispatchToProps = (dispatch) => ({
+    onAboutPress: () => {
+      dispatch(NavigationActions.navigate({routeName: 'about'}));
+    }
+  });
+
+  export default connect(null, mapDispatchToProps)(HomePage);
+```
+
+And voila! it works like a charm.
+
+As you can see above, we are dispatching an action to navigate to `about` page. You might be wondering what's `NavigationActions.navigate`. Well, it's just an [action creator](http://redux.js.org/docs/basics/Actions.html#action-creators) which dispatches an action with type "Navigation/NAVIGATE".
+
+## Passing route params
+
+If you need to pass some parameters to the next route, you could do so using the params key. Example:
+
+```javascript
+dispatch(NavigationActions.navigate({routeName: 'about', params: {someKey: 'someValue'}}));
+```
+
+You can access the passed params in the page using `this.props.navigation.state.params` inside the page file.
+
+> About.page.js
+
+```javascript
+import result from 'lodash/result';
+
+class AboutPage extends Component {
+  render () {
+    const navigatingFrom = result(this.props, 'navigation.state.params.navigatingFrom', '');
+    return (
+      <View style={styles.container}>
+        <Text>About View </Text>
+        {navigatingFrom ? <Text>Navigating from: {navigatingFrom} </Text> : null}
+      </View>
+    );
+  }
+}
+```
+
+## Gotchas
+
+Here are some gotchas which you might face:
+
+* You only have access to the routes defined in the current stack while navigating. If you try to navigate to a sibling stack from a nested page, you will face an error. To achieve this, you would need to `goBack` to the index screen of the current stack and then go to the screen where you want to navigate or use reset action creator.
+* If you wish to add analytics/screen tracking, use redux-middleware defined [here](https://reactnavigation.org/docs/screen-tracking.html). Otherwise, you could also use the [redux-ga-screen-tracker](https://www.npmjs.com/package/redux-ga-screen-tracker) npm module, which does Google analytics screen tracking automatically.
+
+> Note: navigation-actions provides us with a lot of other action-creators as well such as back, reset, etc. Please have a look [here](https://reactnavigation.org/docs/navigation-actions) to know all of them.
+
+The code till here can be found on the **branch** [chapter/10/10.2](https://github.com/react-made-native-easy/note-taker/tree/chapter/10/10.2)
+
