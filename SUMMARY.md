@@ -3,9 +3,7 @@
 * [Introduction](README.md)
 * [React Native Internals 📡](3-react-native-internals/3.1-react-native-internals.md)
 * [Setting up the project 🌈](4-setting-up-the-project/4.1-installing-react-native.md)
-
 Start building the app 😎
-------
 * [See it in action! 🎬](see-it-in-action.md)
 * [Project Structure 🏢](5-project-structure-and-start-building-some-app/5.0-intro.md)
   * [Customizing the project structure](5-project-structure-and-start-building-some-app/5.1-customising-the-structure.md)
@@ -56,6 +54,5 @@ Start building the app 😎
   <!-- * [Rewrite all Dumb components](17-migrating-to-web/17.2-rewrite-all-dumb-components.md) -->
   <!-- * [Reusing business logic across platforms](17-migrating-to-web/17.3-reusing-business-logic-across-platforms.md) -->
 <!-- * [GOTCHAS](18-Gotchas/18.0-intro.md) -->
-----
 * [References](references.md)
 * [The End](the-end.md)

@@ -2,13 +2,10 @@
   "plugins": [
     "-lunr",
     "-search",
-    "search-plus",
     "disqus",
     "expo-snack",
     "ga",
     "edit-link",
-    "back-to-top-button",
-    "githubcontributors",
     "github-buttons"
   ],
   "pdf": {
@@ -17,10 +14,6 @@
   "pluginsConfig": {
     "disqus": {
       "shortName": "reactnative-guide"
-    },
-    "githubcontributors": {
-      "githubOwner": "react-made-native-easy",
-      "githubRepository": "book"
     },
     "edit-link": {
       "base": "https://github.com/react-made-native-easy/book/blob/master",

@@ -1,0 +1,19 @@
+.contributor-additions, .contributor-deletions {
+  display: none;
+}
+
+#GitHubContributors > div {
+  display: inline-flex!important
+  /*to override inline styles*/
+}
+
+#GitHubContributors div + div + div {
+  display: none!important;
+}
+
+.contributor-data {
+  align-self: center;
+  display: inline-flex;
+  justify-content: center;
+  font-weight: bold;
+}

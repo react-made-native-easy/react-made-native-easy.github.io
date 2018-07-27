@@ -42,8 +42,17 @@ Our knowledge is based on our experience of working with React Native apps for a
 
 <h3 align='center'>Authors</h3>
 <center>
-  {% GitHubContributors %}
-  {% endGitHubContributors %}
+<div style="display:inline">
+<div style="width:100px;display:inline-block">  
+<img src="https://avatars2.githubusercontent.com/u/7898942?s=100" width=70 height=70 />
+<a href="https://github.com/react-made-native-easy/book/commits?author=rgabs"><strong>Rahul Gaba</strong></a>
+</div>
+
+<div style="width:100px;display:inline-block">  
+<img src="https://avatars2.githubusercontent.com/u/4029423?s=100" width=70 height=70 />
+<a href="https://github.com/react-made-native-easy/book/commits?author=master-atul"><strong>Atul R</strong></a>
+</div>
+</div>
 </center>
 
 <hr/>
