@@ -11,4 +11,6 @@
 
 - do `gitbook build --gitbook=2.3.2`
 
-- Then do `mv _build docs` to rename the contents to docs
+- do `npm install -g gh-pages`
+
+- gh-pages -d _book
