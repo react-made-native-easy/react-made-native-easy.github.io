@@ -11,6 +11,6 @@
 
 - do `gitbook build --gitbook=2.3.2`
 
-- do `npm install -g gh-pages`
+- do `npm install gh-pages`
 
-- gh-pages -d _book
+- `./node_modules/.bin/gh-pages -d _book`
