@@ -5,8 +5,7 @@
     "disqus",
     "expo-snack",
     "ga",
-    "edit-link",
-    "github-buttons"
+    "edit-link"
   ],
   "pdf": {
     "paperSize": "a4"
