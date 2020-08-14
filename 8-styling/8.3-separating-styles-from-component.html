@@ -42,7 +42,7 @@
     <body>
         
         
-    <div class="book" data-level="7.3" data-basepath=".." data-revision="Sun Nov 11 2018 10:20:28 GMT+0100 (CET)">
+    <div class="book" data-level="7.3" data-basepath=".." data-revision="Sat Aug 15 2020 00:37:00 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -894,49 +894,49 @@ But we suggest that you move the styles to a different file <strong><code>Button
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Button;
 </code></pre>
 <blockquote>
-<p>Button.component.style.js
-```js
-import { StyleSheet } from &apos;react-native&apos;;</p>
+<p>Button.component.style.js</p>
 </blockquote>
-<p>export default StyleSheet.create({
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { StyleSheet } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StyleSheet.create({
   container: {
-    padding: 10,
-    alignItems:&apos;center&apos;,
-    justifyContent:&apos;center&apos;,
-    backgroundColor: &apos;#43a1c9&apos;,
+    padding: <span class="hljs-number">10</span>,
+    alignItems:<span class="hljs-string">&apos;center&apos;</span>,
+    justifyContent:<span class="hljs-string">&apos;center&apos;</span>,
+    backgroundColor: <span class="hljs-string">&apos;#43a1c9&apos;</span>,
   },
   buttonText: {
-    fontSize: 20,
-    textAlign: &apos;center&apos;
+    fontSize: <span class="hljs-number">20</span>,
+    textAlign: <span class="hljs-string">&apos;center&apos;</span>
   }
-});</p>
-<pre><code>
-This has a few benefits:
+});
+</code></pre>
+<p>This has a few benefits:</p>
+<ul>
+<li>This makes the component code much cleaner. The style is present in its own separate file.</li>
+<li>This allows you to write two different style files for Android and iOS if required. Thus, you can keep the same functionality but the button can look different based on the requirement for the platform.</li>
+</ul>
+<p>For example:</p>
+<blockquote>
+<p>Button.component.js</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { StyleSheet, Text, View} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+<span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Button.component.style.js&apos;</span>;
 
-- This makes the component code much cleaner. The style is present in its own separate file.
-- This allows you to write two different style files for Android and iOS if required. Thus, you can keep the same functionality but the button can look different based on the requirement for the platform.
-
-For example:
-
-&gt;Button.component.js
-
-```js
-import React, { Component } from &apos;react&apos;;
-import { StyleSheet, Text, View} from &apos;react-native&apos;;
-import styles from &apos;./Button.component.style.js&apos;;
-
-class Button extends Component {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
   render() {
-    return (
-      &lt;View style={styles.container}&gt;
-        &lt;Text style={styles.buttonText}&gt; Press Me! &lt;/Text&gt;
-      &lt;/View&gt;
-    );
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.container}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.buttonText}</span>&gt;</span> Press Me! <span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+    )</span>;
   }
 }
 
-export default Button;
-</code></pre><p><strong>iOS specific style</strong></p>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Button;
+</code></pre>
+<p><strong>iOS specific style</strong></p>
 <blockquote>
 <p>Button.component.style.ios.js</p>
 </blockquote>
