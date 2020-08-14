@@ -1,7 +1,7 @@
 <div style="text-align:center">
 <div style="text-align:center">
-<img src="https://badges.reactnative.guide/users" alt="total users"/>
-<img src="https://badges.reactnative.guide/pageviews" alt="total page views"/>
+<img src="https://badges.reactnative.guide/api?type=users" alt="total users"/>
+<img src="https://badges.reactnative.guide/api?type=pageviews" alt="total page views"/>
 </div>
 <img src="/cover.jpg" style="display:inline-block;max-height:85vh;" hspace="0">
 </div>
