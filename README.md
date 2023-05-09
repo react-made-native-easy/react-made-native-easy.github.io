@@ -1,16 +1,16 @@
 <div style="text-align:center">
 <div style="text-align:center">
-<img src="https://badges.reactnative.guide/api?type=users" alt="total users"/>
-<img src="https://badges.reactnative.guide/api?type=pageviews" alt="total page views"/>
+<img src="https://ga-badge-generator-rnbook.vercel.app/api?type=users" alt="total users"/>
+<img src="https://ga-badge-generator-rnbook.vercel.app/api?type=pageviews" alt="total page views"/>
 </div>
 <img src="/cover.jpg" style="display:inline-block;max-height:85vh;" hspace="0">
 </div>
 
-<a href="https://www.reactnative.guide" style="display:block;text-align:center;font-weight:bold;text-decoration:none">https://www.reactnative.guide </a>
+<a href="https://react-made-native-easy.github.io/" style="display:block;text-align:center;font-weight:bold;text-decoration:none">https://react-made-native-easy.github.io/ </a>
 
 # React Made Native Easy
 
-<p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://atulr.com'>Atul R</a></p>
+<p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://blog.atulr.com'>Atul R</a></p>
 
 > A reference for building production-grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with React and ES6 and want to build complex native apps.
 
@@ -79,7 +79,7 @@ This is an open source book hosted on Github. We will keep updating the contents
 
 ### **Reviewer / Proof reading** 🤓
 
-  <img src="https://avatars2.githubusercontent.com/u/10727047?s=100" width=70 height=70 />
+<img src="https://avatars2.githubusercontent.com/u/10727047?s=100" width=70 height=70 />
 
 [**Kakul Gupta**](https://github.com/react-made-native-easy/book/commits?author=kakulgupta)
 
