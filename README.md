@@ -11,6 +11,8 @@
 # React Made Native Easy
 
 <p >Written by <a href='http://rahulgaba.com'>Rahul Gaba</a> and <a href='http://blog.atulr.com'>Atul R</a></p>
+<br/>
+<p> Published: August 2018 </p>
 
 > A reference for building production-grade applications which are easy to test, maintain and extend to multiple platforms. This book is for the Web developers who have already got their hands dirty with React and ES6 and want to build complex native apps.
 
